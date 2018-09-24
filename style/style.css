@@ -3,7 +3,7 @@ body{
 }
 article {
     background-color: #b1b1b1;
-    width: 50em;
+    width: 55em;
     margin: auto;
     box-shadow: 5px 5px 5px 5px darkgray;
     text-align: center;
@@ -18,7 +18,7 @@ ul{
     list-style-position: inside;
 }
 h1, h2 {
-    color: #602060;
+    color: #52153b;
     padding-top: 5px;
 }
 
@@ -28,4 +28,8 @@ h2 {
 
 h3{
     color: #604060;
+}
+
+#cover{
+    width: 55em;
 }

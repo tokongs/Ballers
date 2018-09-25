@@ -1,0 +1,47 @@
+
+body{
+    background-color: #F1F1F1;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+#menu_bar {
+    background-color: #3A3A3A;
+    position:fixed;
+    top:0;
+    margin: auto;
+    width: 100%;
+    box-shadow: 5px 5px white;
+}
+
+#menu_list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu_item{
+    float: left;
+}
+
+.menu_item a:hover{
+    background-color: rgb(100, 100, 100);        
+}
+
+.menu_item a{ 
+    display: block;
+
+    font-size: 2em;
+    color: white;
+    font-weight: 900;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+
+}
+
+footer{
+    background-color: #3A3A3A;
+
+}

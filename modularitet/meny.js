@@ -18,40 +18,45 @@ logo.src = "../img/name.png";
 logo.alt = "Ballers United";
 header.appendChild(logo);
 
+
 function dropDown(class_name) {
-    console.log(class_name);
     let sublist = document.getElementsByClassName(class_name);
     if (sublist) {
-        for(let i = 0; i < sublist.length; i++){
+        for (let i = 0; i < sublist.length; i++) {
             sublist[i].style.display = "block";
         }
     }
 }
 
 function dropUp(class_name) {
-    console.log(class_name);
     let sublist = document.getElementsByClassName(class_name);
     if (sublist) {
-        for(let i = 0; i < sublist.length; i++){
+        for (let i = 0; i < sublist.length; i++) {
             sublist[i].style.display = "none";
         }
     }
 }
 
+
 for (let i = 0; i < meny.length; i++) {
     let underliste = document.createElement("ul");
+    let max_lengde = 0;
+
 
     for (let j = 0; j < meny[i].length; j++) {
         let child = document.createElement("li");
         let link = document.createElement("a");
 
+        child.id = sublist_item_id_prefix + meny[i][j];
+
         if (meny[i].length == 1 || j > 0) {
             link.href = sider[i][j];
         }
         if (j > 0) {
-            child.id = sublist_item_id_prefix + meny[i][j];
             child.className = sublist_group_class_prefix + meny[i][0];
             child.className += " " + sublist_item_class_name;
+        } else {
+
         }
         link.innerHTML = meny[i][j];
 
@@ -61,36 +66,12 @@ for (let i = 0; i < meny.length; i++) {
     let top = document.createElement("li");
     top.onmouseover = function () { dropDown(sublist_group_class_prefix + meny[i][0]) };
     top.onmouseout = function () { dropUp(sublist_group_class_prefix + meny[i][0]) };
-    
+
     top.appendChild(underliste);
     meny_liste.appendChild(top);
-    /*
-    if (meny[i].length > 1) {
-        top.innerHTML = meny[i][0];
-        top.onmouseover = function(){dropDown(underliste_prefix + meny[i][0])};
-        top.onmouseout = function(){dropUp(underliste_prefix + meny[i][0])};
 
-        top.id = meny[i][0];
-        meny_liste.appendChild(top)
-
-        let li_underliste = document.createElement("li");
-        li_underliste.className = underliste_class_name;
-        li_underliste.id = underliste_prefix + meny[i][0];
-        li_underliste.appendChild(underliste);
-        meny_liste.appendChild(li_underliste);
-    }
-
-    else {
-        let link = document.createElement("a");
-        link.innerHTML = meny[i][0];
-        link.href = sider[i][0];
-        top.appendChild(link);
-        meny_liste.appendChild(top);
-    }
-    */
 
 }
 
 header.appendChild(meny_liste);
-
 document.getElementsByTagName("body")[0].insertBefore(header, null);

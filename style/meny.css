@@ -1,37 +1,62 @@
 header{
+    height: 8vh;
     position: 0;
-    box-shadow: white 4px;
+    box-shadow: 0px 4px 20px white;
     background-color: #53143B;
     color: white;
+    font-size: 1.5em;
+    font-weight: 900;
+    overflow: visible;
 }
 
-img, ul, a{
-    background-color: rgba(0, 0, 0, 0);
-}
-
-li{
+img{
+    height: 7vh;
+    margin: 0.5vh;
     background-color: #53143B;
+
 }
+
+a:hover{
+    background-color: #8F115F;
+}
+
+li:first-child > a{
+    height: 8vh;
+    line-height: 8vh;
+}
+
+
+ul, li, a{
+    height: 4vh;
+    background-color: #53143B;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+    margin: auto;
+}
+
+
 
 #meny{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    margin-right: 10vw;
+    overflow: visible;
     float:right;
-}
-
-ul{
-    list-style-type: none;
 }
 
 #meny > li{
     float: left;
-    padding: 5px;
+    width: 10ch;
+    height: 8vh;
+}
+
+#meny > li > ul > li:first-child{
+    height: 8vh;
 }
 
 .sublist_item{
-    display:none
+    display: none;
 }
 
 

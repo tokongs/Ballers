@@ -1,0 +1,12 @@
+*{
+    color: white;
+    background-color:#F1F1F1;
+}
+
+p, h1, h2, h3, h4, h5, h6, a{
+    background-color: #353535;
+}
+
+body{
+    margin:0;
+}

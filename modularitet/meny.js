@@ -14,9 +14,14 @@ let meny_liste = document.createElement("ul");
 meny_liste.id = "meny"
 
 let logo = document.createElement("img");
+let index_link = document.createElement("a");
+index_link.href = "index.html";
+index_link.id = "logo_link"
 logo.src = "../img/name.png";
 logo.alt = "Ballers United";
-header.appendChild(logo);
+
+index_link.appendChild(logo);
+header.appendChild(index_link);
 
 
 function dropDown(class_name) {

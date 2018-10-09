@@ -1,0 +1,79 @@
+header{
+    height: 8vh;
+    position: relative;
+    box-shadow: 0px 4px 20px white;
+    background-color: #53143B;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 900;
+    overflow: visible;
+    z-index: 1;
+}
+
+#logo_link{
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    height: 7vh;
+    padding: 0.5vh;
+    margin: auto;
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #53143B;
+
+}
+
+#logo_link img{
+    background-color: #53143B;
+    margin:0;
+}
+header a:hover{
+    background-color: #8F115F;
+}
+
+li:first-child > a{
+    height: 8vh;
+    line-height: 8vh;
+    padding: 0;
+}
+
+
+header ul,header li, header a{
+    height: 4vh;
+    background-color: #53143B;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+    margin: auto;
+}
+header a {
+    padding: 1vh;
+    height: 2vh;
+}
+
+
+
+#meny{
+    position: relative;
+    list-style-type: none;
+    margin-right: 10vw;
+    overflow: visible;
+    float:right;
+}
+
+#meny > li{
+    float: left;
+    width: 11ch;
+    height: 8vh;
+}
+
+#meny > li > ul > li:first-child{
+    height: 8vh;
+}
+
+.sublist_item{
+    display: none;
+}
+
+

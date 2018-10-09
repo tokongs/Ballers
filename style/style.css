@@ -36,9 +36,9 @@ img{
 .tg {
     border-collapse: collapse;
     border-spacing: 0;
-  }
+}
 
-  .tg td {
+.tg td {
     font-family: Arial, sans-serif;
     font-size: 14px;
     padding: 10px 5px;
@@ -47,9 +47,9 @@ img{
     overflow: hidden;
     word-break: normal;
     border-color: black;
-  }
+}
 
-  .tg th {
+.tg th {
     font-family: Arial, sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -59,9 +59,9 @@ img{
     overflow: hidden;
     word-break: normal;
     border-color: black;
-  }
+}
 
-  .tg .tg-0lax {
+.tg .tg-0lax {
     text-align: left;
     vertical-align: top
-  }
+}

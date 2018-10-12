@@ -7,32 +7,128 @@
     <title>Ballers United</title>
     <link rel="stylesheet" type="text/css" href="../style/base.css">
     <link rel="stylesheet" type="text/css" href="../style/meny.css">
-    <link rel="stylesheet" type="text/css" href="../style/index.css">
 
+    <style>
+        .seksjon {
+            float: left;
+            width: 32vw;
+            margin-left: 1vw;
+            margin-bottom: 2vh;
+        }
+
+        .seksjon img {
+            max-width: 100%;
+        }
+
+        .seksjon a:hover {
+            opacity: 0.8;
+        }
+
+        #fotballSeksjon a {
+            background: url(../img/index/fotball.jpg);
+            background-size: cover;
+        }
+
+        #basketSeksjon a {
+            background: url(../img/index/basketball.jpg);
+            background-size: cover;
+        }
+
+        #håndballSeksjon a {
+            background: url(../img/index/håndball.jpg);
+            background-size: cover;
+        }
+
+        .seksjon a {
+            color: #f1f1f1;
+            width: 100%;
+            height: 32vh;
+            display: block;
+            box-shadow: 4px 4px 15px black;
+        }
+
+        .artikkel {
+            height: 40vh;
+            box-shadow: 4px 4px 15px black;
+            background-color: #353535
+        }
+
+        @media only screen and (max-width: 640px){
+            .seksjon{
+                float: none;
+                margin: auto;
+                margin-bottom: 25px;
+                width: 60vw;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <script src="../modularitet/meny.js"></script>
-
-    <div id="fotballSeksjon">
-        <img src="../img/fotball.jpg">
-
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
-            tincidunt ac congue sit amet, mattis at tortor. Ut placerat nisi
-            odio, at aliquam velit aliquet sit amet. In efficitur quam elit,
-            eget consequat purus scelerisque eu. Donec sit amet dui dolor. In
-            finibus leo nec diam varius varius vel nec lacus. Sed quis elit eu
-            nisi dignissim
-        </p>
+    <div id="fotballSeksjon" class="seksjon">
+        <a href="fotball.html">
+            <div class="img_box">
+            </div>
+        </a>
+        <div class="artikkel">
+            <h2>Fotball er gøy!</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                nisi
+                odio, at aliquam velit aliquet sit amet. In efficitur quam
+                elit,
+                eget consequat purus scelerisque eu. Donec sit amet dui dolor.
+                In
+                finibus leo nec diam varius varius vel nec lacus. Sed quis elit
+                eu
+                nisi dignissim
+            </p>
+        </div>
     </div>
 
-    <div id="basketSeksjon">
-        <img src="../img/basketball.jpg">
+    <div id="basketSeksjon" class="seksjon">
+        <a href="basketball.html">
+        </a>
+
+        <div class="artikkel">
+            <h2>Basketball er tøft!</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                nisi
+                odio, at aliquam velit aliquet sit amet. In efficitur quam
+                elit,
+                eget consequat purus scelerisque eu. Donec sit amet dui dolor.
+                In
+                finibus leo nec diam varius varius vel nec lacus. Sed quis elit
+                eu
+                nisi dignissim
+            </p>
+        </div>
+
     </div>
-    <div id="håndballSeksjon">
-        <img src="../img/håndball.jpg">
+    <div id="håndballSeksjon" class="seksjon">
+        <a href="håndball.html"></a>
+        <div class="artikkel">
+            <h2>Håndball er OK!</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                nisi
+                odio, at aliquam velit aliquet sit amet. In efficitur quam
+                elit,
+                eget consequat purus scelerisque eu. Donec sit amet dui dolor.
+                In
+                finibus leo nec diam varius varius vel nec lacus. Sed quis elit
+                eu
+                nisi dignissim
+            </p>
+        </div>
     </div>
 </body>
 

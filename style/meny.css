@@ -4,10 +4,13 @@ header{
     box-shadow: 0px 4px 20px white;
     background-color: #53143B;
     color: white;
-    font-size: 1.5em;
-    font-weight: 900;
     overflow: visible;
     z-index: 1;
+}
+
+a{
+    font-size: 1.5em;
+    font-weight: 900;
 }
 
 #logo_link{
@@ -15,6 +18,7 @@ header{
     display: inline-block;
     position: relative;
     height: 7vh;
+    width: 20em;
     padding: 0.5vh;
     margin: auto;
     margin-right: 0;
@@ -25,6 +29,8 @@ header{
 
 #logo_link img{
     background-color: #53143B;
+    height: 7vh;
+    width: 20em;
     margin:0;
 }
 header a:hover{
@@ -60,12 +66,14 @@ header a {
     margin-right: 10vw;
     overflow: visible;
     float:right;
+    width:40em;
+    height: 8vh;
 }
 
 #meny > li{
     float: left;
-    width: 11ch;
     height: 8vh;
+    width: 10em;
 }
 
 #meny > li > ul > li:first-child{
@@ -76,4 +84,19 @@ header a {
     display: none;
 }
 
+@media only screen and (max-width: 1260px){
+    header{
+        height: 16vh;
+    }
+    #logo_link{
+        display: block;
+        float: none;
+        margin:auto;
+    }
+    #meny{
+        display: block;
+        margin: auto;
+        float: none;
+    }
+}
 

@@ -9,12 +9,15 @@ const meny = [["Tilbud", "Fotball", "Basketball", "Håndball"], ["Kontakt"], ["I
 //Liste over hva de forskjellige "meny-items" skal linke til. meny[i][j] koresponderer til sider[i][j]. none betyr at det ikke skal være en link
 const sider = [["none", "fotball.html", "basketball.html", "handball.html"], ["kontakt.html"], ["none", "info.html", "faq.html", "kalender.info"], ["bli_medlem.html"]]
 
-//Hvert "meny-item" får en id med en felles prefix etterfulgt av navnet til "meny-item"et
-let sublist_item_id_prefix = "sublist_item_";
-//Hvert "meny-item" er klasse "sublist_item"
-let sublist_item_class_name = "sublist_item";
-//Hver "meny-item" er også en klasse med en felles prefix etterfulgt av "top-level meny item" dvs. "Tilbud" eller "Info"
-let sublist_group_class_prefix = "sublist_group_"
+//Hvert "meny item" får en id med en felles prefix etterfulgt av navnet til "meny-item"et
+const sublist_item_id_prefix = "meny_item_";
+//Hvert "meny item" som ikke er"top level" er klasse "sublist_item"
+const sublist_item_class_name = "sublist_item";
+//Hver "meny item" som ikke er "top level" er også en klasse med en felles prefix etterfulgt av "top-level meny item" dvs. "Tilbud" eller "Info"
+const sublist_group_class_prefix = "sublist_group_";
+//Hver "top level" har class "top_level_item"
+const top_level_item_class_name = "top_level_item";
+
 
 //Menyen skal lages inne i en header tag.
 let header = document.createElement("header");
@@ -27,7 +30,7 @@ meny_liste.id = "meny"
 let logo = document.createElement("img");
 let index_link = document.createElement("a");
 index_link.href = "index.html";
-index_link.id = "logo_link"
+index_link.id = "logo_link";
 logo.src = "../img/name.png";
 logo.alt = "Ballers United";
 
@@ -58,27 +61,39 @@ function dropUp(class_name) {
 //Lag menyen som dom elementer
 //Loop gjennom alle underlistene i meny
 for (let i = 0; i < meny.length; i++) {
+    //underliste for en av undermenyene
     let underliste = document.createElement("ul");
-    let max_lengde = 0;
 
 
+    //Loop gjennom alle liste-elementene
     for (let j = 0; j < meny[i].length; j++) {
+        //child er liste elementet og link er hva liste elementet skal linke til
         let child = document.createElement("li");
         let link = document.createElement("a");
 
-        child.id = sublist_item_id_prefix + meny[i][j];
 
+        //Hvis det bare er "top level" på underlisten. Så skal "top level" linke til en side
+        //Eller om vi har loopet forbi "top level" så skal også linke til side
         if (meny[i].length == 1 || j > 0) {
             link.href = sider[i][j];
         }
+
+        //Sett id og klasser
+        child.id = sublist_item_id_prefix + meny[i][j];
+        //Hvis child ikke er "top level"
         if (j > 0) {
             child.className = sublist_group_class_prefix + meny[i][0];
             child.className += " " + sublist_item_class_name;
-        } else {
-
         }
+        else{
+            child.class_name = top_level_item_class_name;
+        }
+
+
+        //Sett link teksten fra meny arrayet
         link.innerHTML = meny[i][j];
 
+        //link ting
         child.appendChild(link);
         underliste.appendChild(child);
     }

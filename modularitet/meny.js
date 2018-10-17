@@ -18,7 +18,8 @@ const sublist_group_class_prefix = "sublist_group_";
 //Hver "top level" har class "top_level_item"
 const top_level_item_class_name = "top_level_item";
 
-
+//Menyen skal legges inne i en div med id "meny-div". Denne div'en må lages i html dokumentet
+const mål = document.querySelector("#meny-div");
 //Menyen skal lages inne i en header tag.
 let header = document.createElement("header");
 
@@ -109,4 +110,4 @@ for (let i = 0; i < meny.length; i++) {
 
 //Legg til meny til dokumentet
 header.appendChild(meny_liste);
-document.getElementsByTagName("body")[0].insertBefore(header, null);
+mål.appendChild(header);

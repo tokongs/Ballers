@@ -23,3 +23,22 @@ body{
     box-shadow: 4px 4px 15px black;
     background-color: #353535;
 }
+
+header{
+    font-size: 3em;
+    display: block;
+}
+
+header > img{
+    width: 100%;
+    height: 40vh;
+}
+
+header > h1{
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+    font-size: 50px;
+    margin:0;
+
+}

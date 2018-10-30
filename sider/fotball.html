@@ -69,6 +69,7 @@
             background-color: #53143B;
         }
         
+        
 
 
        
@@ -77,7 +78,8 @@
 </head>
 
 <body>
-    <script src="../modularitet/meny.js"></script>
+    <div id="meny-div"></div>
+    
     <div id="toppen">
         <div id="headerbilde">
             <img id="tittelbilde" src="../img/fotball/tittelbilde2red2.png" title="bilde">
@@ -121,8 +123,8 @@
             </p>
         </div>
 
-        <div class="artikkel">
-            <div class="imgbox">
+        <div class="artikkel" id="ullern" onclick="popup(this.id)">
+                <div class="imgbox">
                 <img src="../img/fotball/kampbilde.jpg" title="kampbilde">
             </div>
             <h2>Førstelaget taper stort mot overmakten Ullern</h2>
@@ -147,8 +149,8 @@
             </p>
         </div>
     </div>  
-   
-   
+    <script src="../modularitet/popup.js"></script>
+    <script src="../modularitet/meny.js"></script>
 </body>
 
 </html>

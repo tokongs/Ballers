@@ -2,6 +2,7 @@ body{
     background-color: #353535;
 }
 
+/* Styler "sprørsmålsbarene" */
 .accordion {
     background-color:#5A1848;
     color: #ffff;
@@ -32,6 +33,8 @@ body{
 
 .accordion:after {
     content: '\02795';
+    /* pluss ikon*/
+
     font-size: 13px;
     float: right;
     margin-left: 5px;
@@ -39,4 +42,5 @@ body{
 
 .active:after {
     content: '\2796';
+    /* minus ikon */
 }

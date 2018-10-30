@@ -108,4 +108,4 @@ for (let i = 0; i < meny.length; i++) {
 
 //Legg til meny til dokumentet
 header.appendChild(meny_liste);
-mål.appendChild(header);
+maal.appendChild(header);

@@ -7,7 +7,7 @@
 //og meny[i][1] til meny[i][j] er dropdown menyer som kan vises under "top-level"
 const meny = [["Tilbud", "Fotball", "Basketball", "Håndball"], ["Kontakt"], ["Info", "Info", "FAQ", "Kalender"], ["Bli medlem"]];
 //Liste over hva de forskjellige "meny-items" skal linke til. meny[i][j] koresponderer til sider[i][j]. none betyr at det ikke skal være en link
-const sider = [["none", "fotball.html", "basketball.html", "handball.html"], ["kontakt.html"], ["none", "info.html", "faq.html", "kalender.info"], ["bli_medlem.html"]]
+const sider = [["none", "fotball.html", "basketball.html", "handball.html"], ["kontakt.html"], ["none", "info.html", "faq.html", "kalender.html"], ["bli_medlem.html"]]
 
 //Hvert "meny item" får en id med en felles prefix etterfulgt av navnet til "meny-item"et
 const sublist_item_id_prefix = "meny_item_";

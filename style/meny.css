@@ -1,4 +1,4 @@
-#meny-div header{
+header{
     height: 80px;
     position: fixed;
     top: 0px;
@@ -18,7 +18,7 @@
     height: 80px;
 }
 
-#meny-div #logo_link{
+#logo_link{
     text-align: left;
     display: inline-block;
     position: relative;
@@ -32,24 +32,24 @@
 
 }
 
-#meny-div #logo_link img{
+#logo_link img{
     background-color: #53143B;
     height: 70px;
     padding: 5px;
     margin: auto;
 }
-#meny-div header a:hover{
+header a:hover{
     background-color: #8F115F;
 }
 
-#meny-div li:first-child > a{
+li:first-child > a{
     height: 80px;
     line-height: 80px;
     padding: 0;
 }
 
 
-#meny-div header ul,header li, header a{
+header ul,header li, header a{
     height: 40px;
     background-color: #53143B;
     display: block;
@@ -58,14 +58,14 @@
     padding: 0;
     margin: auto;
 }
-#meny-div header a {
+header a {
     padding: 10px;
     height: 20px;
 }
 
 
 
-#meny-div #meny{
+#meny{
     margin-left: 10%;
     list-style-type: none;
     overflow: visible;
@@ -74,7 +74,7 @@
     width: 600px;
 }
 
-#meny-div #meny > li{
+#meny > li{
     float: left;
     height: 80px;
     width: 150px;
@@ -84,7 +84,7 @@
     height: 80px;
 }
 
-#meny-div .sublist_item{
+.sublist_item{
     display: none;
 }
 
@@ -92,7 +92,7 @@
     #meny-div{
         height: 120px;
     }
-    #meny-div header{
+    header{
         height: 120px;
     }
     #logo_link{

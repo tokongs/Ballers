@@ -20,6 +20,7 @@ const top_level_item_class_name = "top_level_item";
 
 //Menyen skal legges inne i en div med id "meny-div". Denne div'en må lages i html dokumentet
 const mål = document.querySelector("#meny-div");
+
 //Menyen skal lages inne i en header tag.
 let header = document.createElement("header");
 
@@ -104,8 +105,6 @@ for (let i = 0; i < meny.length; i++) {
 
     top.appendChild(underliste);
     meny_liste.appendChild(top);
-
-
 }
 
 //Legg til meny til dokumentet

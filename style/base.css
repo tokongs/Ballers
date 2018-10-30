@@ -18,3 +18,8 @@ body{
     font-size: 16px;
     background-color: #F1f1f1
 }
+
+.artikkel{
+    box-shadow: 4px 4px 15px black;
+    background-color: #353535;
+}

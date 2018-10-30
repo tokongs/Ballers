@@ -1,25 +1,30 @@
 header{
-    height: 8vh;
-    position: relative;
-    box-shadow: 0px 4px 20px white;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    box-shadow: 0px 4px 40px white;
     background-color: #53143B;
     color: white;
     overflow: visible;
     z-index: 1;
-}
-
-a{
     font-size: 1.5em;
     font-weight: 900;
+}
+
+
+#meny-div{
+    height: 80px;
 }
 
 #logo_link{
     text-align: left;
     display: inline-block;
     position: relative;
-    height: 7vh;
+    height: 70px;
     width: 20em;
-    padding: 0.5vh;
+    padding: 0px;
     margin: auto;
     margin-right: 0;
     margin-left: 0;
@@ -29,23 +34,23 @@ a{
 
 #logo_link img{
     background-color: #53143B;
-    height: 7vh;
-    width: 20em;
-    margin:0;
+    height: 70px;
+    padding: 5px;
+    margin: auto;
 }
 header a:hover{
     background-color: #8F115F;
 }
 
 li:first-child > a{
-    height: 8vh;
-    line-height: 8vh;
+    height: 80px;
+    line-height: 80px;
     padding: 0;
 }
 
 
 header ul,header li, header a{
-    height: 4vh;
+    height: 40px;
     background-color: #53143B;
     display: block;
     text-align: center;
@@ -54,30 +59,29 @@ header ul,header li, header a{
     margin: auto;
 }
 header a {
-    padding: 1vh;
-    height: 2vh;
+    padding: 10px;
+    height: 20px;
 }
 
 
 
 #meny{
-    position: relative;
+    margin-left: 10%;
     list-style-type: none;
-    margin-right: 10vw;
     overflow: visible;
-    float:right;
-    width:40em;
-    height: 8vh;
+    display: inline-block;
+    height: 80px;
+    width: 600px;
 }
 
 #meny > li{
     float: left;
-    height: 8vh;
-    width: 10em;
+    height: 80px;
+    width: 150px;
 }
 
 #meny > li > ul > li:first-child{
-    height: 8vh;
+    height: 80px;
 }
 
 .sublist_item{
@@ -85,10 +89,21 @@ header a {
 }
 
 @media only screen and (max-width: 1260px){
+    #meny-div{
+        height: 120px;
+    }
     header{
-        height: 16vh;
+        height: 120px;
     }
     #logo_link{
+        height: 40px;
+        display: block;
+        float: none;
+        margin:auto;
+    }
+    #logo_link img{
+        height: 40px;
+        padding: 0px;
         display: block;
         float: none;
         margin:auto;

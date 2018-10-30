@@ -1,4 +1,4 @@
-header{
+#meny-div header{
     height: 80px;
     position: fixed;
     top: 0px;
@@ -32,24 +32,24 @@ header{
 
 }
 
-#logo_link img{
+#logo_link > img{
     background-color: #53143B;
     height: 70px;
     padding: 5px;
     margin: auto;
+    width: auto;
 }
-header a:hover{
+#meny-div a:hover{
     background-color: #8F115F;
 }
 
-li:first-child > a{
+#meny li:first-child > a{
     height: 80px;
     line-height: 80px;
     padding: 0;
 }
 
-
-header ul,header li, header a{
+#meny ul,#meny li, #meny a{
     height: 40px;
     background-color: #53143B;
     display: block;
@@ -58,7 +58,8 @@ header ul,header li, header a{
     padding: 0;
     margin: auto;
 }
-header a {
+
+#meny a {
     padding: 10px;
     height: 20px;
 }
@@ -72,6 +73,7 @@ header a {
     display: inline-block;
     height: 80px;
     width: 600px;
+    margin: auto;
 }
 
 #meny > li{
@@ -84,7 +86,7 @@ header a {
     height: 80px;
 }
 
-.sublist_item{
+#meny .sublist_item{
     display: none;
 }
 
@@ -92,7 +94,7 @@ header a {
     #meny-div{
         height: 120px;
     }
-    header{
+    #meny-div header{
         height: 120px;
     }
     #logo_link{

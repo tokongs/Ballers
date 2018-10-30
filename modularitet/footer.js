@@ -15,15 +15,13 @@ var snapchatLink = document.createElement("a");
 
 //Legger til ikonene til variablene
 twitterIcon.src = "../img/icons/twitterIcon.png";
-src.appendchild(twitterIcon);
-
 googleIcon.src = "../img/icons/googleplusIcon.png";
-src.appendchild(googleIcon);
-
 facebookIcon.src = "../img/icons/facebookIcon.png";
-src.appendchild(facebookIcon);
-
 snapchatIcon.src = "../img/icons/snapchatIcon.png";
-src.appendchild(snapchatIcon);
 
 var src = getElementById(ballersFooter);
+
+src.appendchild(twitterIcon);
+src.appendchild(googleIcon);
+src.appendchild(facebookIcon);
+src.appendchild(snapchatIcon);

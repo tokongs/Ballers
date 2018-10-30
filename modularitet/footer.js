@@ -1,7 +1,7 @@
-//Henter footerelementet fra sidene
-//var myFooter = document.getElementById("ballersFooter");
+//Lager en variabel som er footerelementet på sidene
+var footer = document.getElementById("ballersFooter");
 
-//Lager et bildeelement til ikonene
+//Lager et bildeelement til hvert av ikonene
 var twitterIcon = document.createElement("img");
 var googleIcon = document.createElement("img");
 var facebookIcon = document.createElement("img");
@@ -15,15 +15,29 @@ var snapchatLink = document.createElement("a");
 
 //Legger til ikonene til variablene
 twitterIcon.src = "../img/icons/twitterIcon.png";
-src.appendchild(twitterIcon);
-
 googleIcon.src = "../img/icons/googleplusIcon.png";
-src.appendchild(googleIcon);
-
 facebookIcon.src = "../img/icons/facebookIcon.png";
-src.appendchild(facebookIcon);
-
 snapchatIcon.src = "../img/icons/snapchatIcon.png";
-src.appendchild(snapchatIcon);
 
-var src = getElementById(ballersFooter);
+//Legger til link
+//Åpner ny fane når man trykker på ikonet
+twitterLink.href = "https://twitter.com/";
+twitterLink.target = "_blank";
+googleLink.href = "https://plus.google.com/discover";
+googleLink.target = "_blank";
+facebookLink.href = "https://www.facebook.com/";
+facebookLink.target = "_blank";
+snapchatLink.href = "https://www.snapchat.com/";
+snapchatLink.target = "_blank";
+
+//Legger ikonene til linkene
+twitterLink.appendChild(twitterIcon);
+googleLink.appendChild(googleIcon);
+facebookLink.appendChild(facebookIcon);
+snapchatLink.appendChild(snapchatIcon);
+
+//Legger ikonene og linkene til footeren
+footer.appendChild(twitterLink);
+footer.appendChild(googleLink);
+footer.appendChild(facebookLink);
+footer.appendChild(snapchatLink);

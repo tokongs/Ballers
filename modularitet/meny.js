@@ -1,4 +1,4 @@
-//Dette er et skript for å sette opp og lage menyen som skal inkluderes på hver side. Den setter opp en logo med link og 
+//Dette er et skript for å sette opp og lage menyen som skal inkluderes på hver side. Den setter opp en logo med link og
 // en liste av lister der "top-level" vil linke til en side om den ikke har en underliste, eller vil elementene i underlisten linke
 // til sidene som er spesifisert i sider arrayet
 
@@ -19,7 +19,7 @@ const sublist_group_class_prefix = "sublist_group_";
 const top_level_item_class_name = "top_level_item";
 
 //Menyen skal legges inne i en div med id "meny-div". Denne div'en må lages i html dokumentet
-const mål = document.querySelector("#meny-div");
+const maal = document.querySelector("#meny-div");
 //Menyen skal lages inne i en header tag.
 let header = document.createElement("header");
 
@@ -27,7 +27,7 @@ let header = document.createElement("header");
 let meny_liste = document.createElement("ul");
 meny_liste.id = "meny"
 
-//Configurer logoen 
+//Configurer logoen
 let logo = document.createElement("img");
 let index_link = document.createElement("a");
 index_link.href = "index.html";

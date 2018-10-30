@@ -11,19 +11,20 @@
 
     <header></header>
 
-        <form action="/data" method="post">
+        <form name="bli_medlem" action="action.html" method="post">
         <!-- Hvor info fra formen blir sendt -->
             <div>
                 <label for="navn">Navn:</label>
-                <input type="text" id="navn" name="navn">
+                <input type="text" id="navn" name="navn" required>
             </div>
             <div>
                 <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="bruker_mail">
+                <input type="email" id="mail" name="bruker_mail" required>
             </div>
             <div>
                 <label id="lag">Lag:</label>
-                <select name="lag">
+                <select name="lag" required>
+                    <option selected disabled></option>
                     <option value="Fotball">Fotball</option>
                     <option value="Håndball">Håndball</option>
                     <option value="Basketball">Basketball</option>

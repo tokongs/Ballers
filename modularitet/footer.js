@@ -1,5 +1,5 @@
 //Henter footerelementet fra sidene
-//var myFooter = document.getElementById("ballersFooter");
+var footer = getElementById("ballersFooter");
 
 //Lager et bildeelement til ikonene
 var twitterIcon = document.createElement("img");
@@ -19,9 +19,14 @@ googleIcon.src = "../img/icons/googleplusIcon.png";
 facebookIcon.src = "../img/icons/facebookIcon.png";
 snapchatIcon.src = "../img/icons/snapchatIcon.png";
 
-var src = getElementById(ballersFooter);
+//Legger ikonene til linkene
+twitterLink.appendChild(twitterIcon);
+googleLink.appendChild(googleIcon);
+facebookLink.appendChild(facebookIcon);
+snapchatLink.appendChild(snapchatIcon);
 
-src.appendchild(twitterIcon);
-src.appendchild(googleIcon);
-src.appendchild(facebookIcon);
-src.appendchild(snapchatIcon);
+//Legger ikonene og linkene til footeren
+footer.appendChild(twitterLink);
+footer.appendChild(googleLink);
+footer.appendChild(facebookLink);
+footer.appendChild(snapchatLink);

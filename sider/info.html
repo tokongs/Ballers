@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>info</title>
-    <style type="text/css" src="../style/base.css">
+    <link rel="stylesheet" type="text/css" href="../style/meny.css">
+    <link rel="stylesheet" type="text/css" href="../style/base.css">
+    <style type="text/css">
       h1{
         background-color: #53143B;
         color: #FFFFFF;
@@ -31,9 +33,13 @@
         margin-right: 2%;
         height: 500px;
       }
+      .kart p{
+        background-color: #53143B;
+      }
     </style>
   </head>
   <body>
+    <div id="meny-div"></div>
     <h1>Informasjon</h1>
     <div class="hoveddel">
       <h2>Ballers united</h2>
@@ -55,5 +61,6 @@
 
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz8TULWjPhxszz4ZOrEuiR1VClwr_AWco&callback=myMap"></script>
+    <script src="../modularitet/meny.js"></script>
   </body>
 </html>

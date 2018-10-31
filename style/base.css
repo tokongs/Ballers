@@ -38,3 +38,8 @@ body{
     height: 50px;
     margin:0;
 }
+
+#ballersFooter {
+  clear: both;
+  background-color: #3A3A3A;
+}

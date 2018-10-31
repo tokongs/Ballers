@@ -12,9 +12,7 @@
 
 .artikkel img {
     width: 100%;
-    height: 100%;   
-    
-    
+    height: 100%;    
 }
 
 .imgbox {
@@ -66,7 +64,8 @@
     background-color: #53143B;
 }
 @media only screen and (max-width: 950px){
-#infobar{
-float: none;
-margin: auto;        
+    #infobar{
+    float: none;
+    margin: auto;        
+    }
 }

@@ -20,13 +20,14 @@
         .artikkel {
             height: 40vh;
             box-shadow: 4px 4px 15px black;
-            background-color: #353535
+            background-color: #353535;
+            overflow:hidden;
         }
 
         .artikkel img {
            
             width: 100%;
-            height: 40vh;   
+            height: 100%;   
             
           
         }
@@ -49,7 +50,7 @@
             
         }
         #headerbilde{
-            height: 25vw;
+            height: 18vw;
             width: 100%;
             overflow: hidden;
         }
@@ -67,6 +68,20 @@
         }
         #infobar p,#infobar h1,#infobar h2 {
             background-color: #53143B;
+        }
+        .close{
+            position: absolute;
+            left: 85vw;
+            top:5vw;
+            font-size: 40px;
+            display: none;
+            color: #53143B; 
+        }
+        .close:hover, .close:focus {
+            color: rgb(150, 16, 16);            
+            cursor: pointer;
+            font-size: 60px;
+            
         }
         
         
@@ -103,7 +118,7 @@
     </div>
 
     <div id="hovedelen" class="seksjon">
-        <div class="artikkel">
+        <div class="artikkel" id="artikkel4" onclick="popup(this.id)">
             <div class="imgbox">
                 <img src="../img/fotball/jersey.png" title="draktbilde">
             </div>
@@ -123,7 +138,7 @@
             </p>
         </div>
 
-        <div class="artikkel" id="ullern" onclick="popup(this.id)">
+        <div class="artikkel" id="artikkel3" onclick="popup(this.id)">
                 <div class="imgbox">
                 <img src="../img/fotball/kampbilde.jpg" title="kampbilde">
             </div>
@@ -132,11 +147,35 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
                 tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
                
             </p>
         </div>
 
-        <div class="artikkel">
+        <div class="artikkel" id="artikkel2" onclick="popup(this.id)">
             <div class="imgbox">
                 <img src="../img/fotball/kampbilde.jpg" title="kampbilde">
             </div>
@@ -147,7 +186,25 @@
                 tincidunt ac congue sit amet, mattis at tortor. Ut placerat
                
             </p>
+                
         </div>
+
+        <div class="artikkel" id="artikkel1" onclick="popup(this.id)">
+            <div class="imgbox">
+                <img src="../img/fotball/kampbilde.jpg" title="kampbilde">
+            </div>
+            <h2>Førstelaget taper stort mot overmakten Ullern</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+               
+            </p>                
+        </div>
+
+        <div>
+            <span id="closebutton" class="close" onclick="reset()" >&times;</span>
+        </div>    
     </div>  
     <script src="../modularitet/popup.js"></script>
     <script src="../modularitet/meny.js"></script>

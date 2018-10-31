@@ -47,9 +47,9 @@
     height: 95%;
 }
 .close{
-    position: absolute;
-    left: 86vw;
-    top:13vh;
+    position: fixed;
+    left: 85vw;
+    top:14vh;
     font-size: 40px;
     display: none;
     color: #53143B;

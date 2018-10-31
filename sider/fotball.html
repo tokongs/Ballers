@@ -7,106 +7,105 @@
     <title>Ballers United</title>
     <link rel="stylesheet" type="text/css" href="../style/base.css">
     <link rel="stylesheet" type="text/css" href="../style/meny.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet">
+
+
     <style>
         .seksjon {
             float: left;
             width: 70vw;
             margin-left: 1vw;
             margin-bottom: 2vh;
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
         }
 
         .artikkel {
             height: 40vh;
+            overflow:hidden;
         }
 
         .artikkel img {
-<<<<<<< Updated upstream
-
             width: 100%;
-            height: 40vh;
+            height: 100%;
 
 
-=======
-            width: 100%;
-            height: 40vh;
->>>>>>> Stashed changes
         }
+
         .imgbox {
             height: 40vh;
             width: 20vw;
             float: left;
         }
 
-        #tittelbilde{
+        #tittelbilde {
             border: 0;
             margin: 0;
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
         }
         #headerbilde{
-            height: 25vw;
+            height: 18vw;
             width: 100%;
             overflow: hidden;
         }
-        #hovedelen{
+
+        #hovedelen {
             position: relative;
         }
 
-        #infobar{
+        #infobar {
             float: right;
-            right:1vw;
+            right: 1vw;
             width: 27vw;
-            background-color:#53143B;
+            background-color: #53143B;
             margin: 1vw 0vw;
             height: 95%;
         }
-        #infobar p,#infobar h1,#infobar h2 {
+        .close{
+            position: absolute;
+            left: 85vw;
+            top:5vw;
+            font-size: 40px;
+            display: none;
+            color: #53143B;
+        }
+        .close:hover, .close:focus {
+            color: rgb(150, 16, 16);
+            cursor: pointer;
+            font-size: 60px;
+
+        }
+
+        #infobar p,
+        #infobar h1,
+        #infobar h2 {
             background-color: #53143B;
         }
-<<<<<<< Updated upstream
-
-
-
-
-
-=======
-
->>>>>>> Stashed changes
     </style>
 </head>
 
 <body>
-    <script src="../modularitet/meny.js"></script>
-    <div id="toppen">
-        <div id="headerbilde">
-            <img id="tittelbilde" src="../img/fotball/tittelbilde2red2.png" title="bilde">
-        </div>
+    <div id="meny-div"></div>
+
+    <header id="hoved_header">
+        <img id="tittelbilde" src="../img/fotball/tittelbilde2red2.png" title="bilde">
         <h1>FOTBALL</h1>
-    </div>
+    </header>
 
     <div id="infobar" class="seksjon">
         <h2>Infobar</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
 
-            </p>
+        </p>
     </div>
 
     <div id="hovedelen" class="seksjon">
-        <div class="artikkel">
+        <div class="artikkel" id="artikkel4" onclick="popup(this.id)">
             <div class="imgbox">
                 <img src="../img/fotball/jersey.png" title="draktbilde">
             </div>
@@ -126,7 +125,57 @@
             </p>
         </div>
 
-        <div class="artikkel">
+        <div class="artikkel" id="artikkel3" onclick="popup(this.id)">
+            <div class="imgbox">
+                <img src="../img/fotball/kampbilde.jpg" title="kampbilde">
+            </div>
+            <h2>Førstelaget taper stort mot overmakten Ullern</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+            </p>
+        </div>
+
+        <div class="artikkel" id="artikkel2" onclick="popup(this.id)">
+            <div class="imgbox">
+                <img src="../img/fotball/kampbilde.jpg" title="kampbilde">
+            </div>
+            <h2>Førstelaget taper stort mot overmakten Ullern</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
+                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
+
+            </p>
+
+        </div>
+
+        <div class="artikkel" id="artikkel1" onclick="popup(this.id)">
             <div class="imgbox">
                 <img src="../img/fotball/kampbilde.jpg" title="kampbilde">
             </div>
@@ -139,21 +188,16 @@
             </p>
         </div>
 
-        <div class="artikkel">
-            <div class="imgbox">
-                <img src="../img/fotball/kampbilde.jpg" title="kampbilde">
-            </div>
-            <h2>Førstelaget taper stort mot overmakten Ullern</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                imperdiet elit vitae pellentesque vulputate. Vivamus dolor est,
-                tincidunt ac congue sit amet, mattis at tortor. Ut placerat
-
-            </p>
+        <div>
+            <span id="closebutton" class="close" onclick="reset()">&times;</span>
         </div>
+    </div>
+
     </div>
     <footer id="ballersFooter"> </footer>
     <script src="../modularitet/footer.js"></script>
+    <script src="../modularitet/popup.js"></script>
+    <script src="../modularitet/meny.js"></script>
 
 </body>
 

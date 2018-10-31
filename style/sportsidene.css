@@ -48,7 +48,7 @@
 .close{
     position: absolute;
     left: 86vw;
-    top:6vw;
+    top:13vh;
     font-size: 40px;
     display: none;
     color: #53143B;
@@ -69,6 +69,7 @@
 @media only screen and (max-width: 950px){
     #infobar{
     float: none;
-    margin: auto;        
+    margin: auto;           
     }
+   
 }

@@ -9,7 +9,7 @@ function popup(clicked_id){
     if (klar) {
     diven = document.getElementById(clicked_id);
     diven.setAttribute("style","width:80vw;"+"height:80vh;"+"z-index=1;"                         //gjør aktuelle diven til stor popup med style.
-    +"position:absolute;"+"left:5vw;"+ "top:5vw;");    
+    +"position:absolute;"+"left:5vw;"+ "top:5vw;"+"border:solid #f1f1f1 8px;");    
     
     document.getElementById("closebutton").setAttribute("style", "display:block;");              //exit-knappen blir synlig
     diven.getElementsByClassName("imgbox")[0].setAttribute("style","width:30vw;"+"height:60vh;"); //bilde tilhørende aktuell div blir større

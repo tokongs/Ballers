@@ -34,10 +34,11 @@ body{
     font-size: 0;
     display: block;
     margin-bottom: 20px;
+    overflow: hidden;
+
 }
 
 #hoved_header > img{
-    width: 100%;
     height: 400px;
 }
 

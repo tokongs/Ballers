@@ -34,7 +34,7 @@
 }
 
 #hovedelen {
-    float:left;
+    position: relative;
     width: 70%;
 }
 

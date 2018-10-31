@@ -6,8 +6,9 @@
 }
 
 .artikkel {
-    height: 40vh;
-    overflow:hidden;
+    height: 40vh;    
+    overflow: hidden;    
+    margin: 1vw 1vw 1vw 1vw;
 }
 
 .artikkel img {
@@ -25,8 +26,9 @@
     border: 0;
     margin: 0;
 }
-#headerbilde{
-    height: 18vw;
+
+#bildediv{
+    height: 300px;
     width: 100%;
     overflow: hidden;
 }
@@ -45,11 +47,12 @@
 }
 .close{
     position: absolute;
-    left: 85vw;
-    top:5vw;
+    left: 86vw;
+    top:6vw;
     font-size: 40px;
     display: none;
-    color: #53143B; 
+    color: #53143B;
+    background-color: bisque;
 }
 .close:hover, .close:focus {
     color: rgb(150, 16, 16);            

@@ -13,6 +13,7 @@ function popup(clicked_id){
     
     document.getElementById("closebutton").setAttribute("style", "display:block;");              //exit-knappen blir synlig
     diven.getElementsByClassName("imgbox")[0].setAttribute("style","width:30vw;"+"height:60vh;"); //bilde tilhørende aktuell div blir større
+    
     }
     klar=false;                                                                                    //gjør klar til false, sånn at popup ikke kjøres før reset er kjørt.
     console.log(diven)

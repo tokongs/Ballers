@@ -1,0 +1,78 @@
+#hoved_header {
+  margin-bottom: 0px;
+}
+
+table {
+  width: 100%;
+  margin-top: 2%;
+}
+
+.card {
+  background-color: #3A3A3A;
+}
+
+.card-header {
+  text-align: center;
+  border: none;
+  background: #404040;
+  color: #ffffff;
+  font-weight: 100;
+  text-transform: uppercase;
+  border-radius: 6px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#monthAndYear {
+  font-size: 28px;
+  border: none;
+  background: #404040;
+  color: #ffffff;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+button {
+  border: none;
+  background: #404040;
+  color: #ffffff;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+button:hover {
+  font-weight: 700;
+  letter-spacing: 3px;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
+}
+
+td {
+  border: none;
+  background: #404040;
+  color: #ffffff;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+}
+
+td:hover {
+  font-weight: 700;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
+}
+
+th {
+  text-align: left;
+}

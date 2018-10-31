@@ -29,7 +29,7 @@ function vis_kalender(dato) {
 
     monthAndYear.innerHTML = months[currentMonth] + " " + currentYear;
 
-    let forste_dag = new Date(dato.getFullYear(), dato.getMonth(), 1).getDay();
+    let forste_dag = new Date(dato.getFullYear(), dato.getMonth(), 1).getDay() - 1;
     let offset = forste_dag;
     let antall_dager = new Date(dato.getFullYear(), dato.getMonth() + 1, 0).getDate();
 

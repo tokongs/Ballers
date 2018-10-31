@@ -7,8 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../style/base.css">
     <link rel="stylesheet" type="text/css" href="../style/meny.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet">
-
-
+    <link rel="stylesheet" type="text/css" href="../style/kalender.css">
     <style>
     </style>
 
@@ -21,26 +20,26 @@
             <h1>Hva skjer fremover</h1>
         </header>
         <div class="card">
-            <h3 class="card-header" id="monthAndYear">Month And Year<h3>
+          <div class="card-header">
+            <button class="btn btn-outline-primary col-sm-6" onclick="previous()">Previous</button>
+              <span id="monthAndYear">Month And Year</span>
+            <button class="btn btn-outline-primary col-sm-6" onclick="next()">Next</button>
+          </div>
                     <table class="table table-bordered table-responsive-sm" id="calendar">
                         <thead>
                             <tr>
-                                <th>Sun</th>
                                 <th>Mon</th>
                                 <th>Tue</th>
                                 <th>Wed</th>
                                 <th>Thu</th>
                                 <th>Fri</th>
                                 <th>Sat</th>
+                                <th>Sun</th>
                             <tr>
                         </thead>
 
                         <tbody id="calendar-body"></tbody>
                     </table>
-                    <div class="form-inline">
-                        <button class="btn btn-outline-primary col-sm-6" onclick="previous()">Previous</button>
-                        <button class="btn btn-outline-primary col-sm-6" onclick="next()">Next</button>
-                    </div>
         </div>
     </div>
 

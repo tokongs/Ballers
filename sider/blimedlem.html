@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="../style/blimedlem.css">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet">
-        <title>Bli medlem</title>
-    </head>
 
-    <body>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../style/base.css">
+    <link rel="stylesheet" href="../style/meny.css">
+    <link rel="stylesheet" href="../style/blimedlem.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet">
+    <title>Bli medlem</title>
+</head>
 
-    <header></header>
+<body>
 
-        <form name="bli_medlem" action="action.html" method="post">
+    <div id="meny-div"></div>
+
+    <form name="bli_medlem" action="action.html" method="post">
         <!-- Hvor info fra formen blir sendt -->
-            <div>
-                <label for="navn">Navn:</label>
-                <input type="text" id="navn" name="navn" required>
-            </div>
-            <div>
-                <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="bruker_mail" required>
-            </div>
-            <div>
-                <label id="lag">Lag:</label>
-                <select name="lag" required>
-                    <option selected disabled></option>
-                    <option value="Fotball">Fotball</option>
-                    <option value="Håndball">Håndball</option>
-                    <option value="Basketball">Basketball</option>
-                </select>
-            </div>
-            <div>
-                <label id="mer_info">Mer info:</label>
-                <textarea name="mer" rows="10" cols="20"></textarea>
-            </div>
-            <div>
-                <input type="submit" id="knapp" value="Send inn">
-            </div>
-        </form>
-        <footer id="ballersFooter"> </footer>
-        <script src="../modularitet/footer.js"></script>
-    </body>
+        <div>
+            <label for="navn">Navn:</label>
+            <input type="text" id="navn" name="navn" required>
+        </div>
+        <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="bruker_mail" required>
+        </div>
+        <div>
+            <label id="lag">Lag:</label>
+            <select name="lag" required>
+                <option selected disabled></option>
+                <option value="Fotball">Fotball</option>
+                <option value="Håndball">Håndball</option>
+                <option value="Basketball">Basketball</option>
+            </select>
+        </div>
+        <div>
+            <label id="mer_info">Mer info:</label>
+            <textarea name="mer" rows="10" cols="20"></textarea>
+        </div>
+        <div>
+            <input type="submit" id="knapp" value="Send inn">
+        </div>
+    </form>
+    <footer id="ballersFooter"> </footer>
+    <script src="../modularitet/footer.js"></script>
+    <script src="../modularitet/meny.js"></script>
+
+</body>
 
 </html>

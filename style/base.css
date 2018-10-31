@@ -1,17 +1,13 @@
 *{
     color: white;
     font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
 }
 
 p, h2, h3, h4, h5, h6{
     background-color: #353535;
     padding: 10px;
 }
-
-h1{
-    background-color: #53143B;
-}
-
 body{
     margin:0;
     width: 100%;
@@ -24,21 +20,23 @@ body{
     background-color: #353535;
 }
 
-header{
-    font-size: 3em;
+.hoved_header{
+    font-size: 0;
     display: block;
+    height: 500px;
+    margin-bottom: 20px;
 }
 
-header > img{
+.hoved_header > img{
     width: 100%;
-    height: 40vh;
+    height: 400px;
 }
 
-header > h1{
-    width: 100%;
-    height: 60px;
-    padding-top: 20px;
-    font-size: 50px;
+hoved_header > h1{
+    font-size: 48px;
+    background-color: #53143B;
+    width: 90%;
+    padding: 10px 5%;
+    height: 50px;
     margin:0;
-
 }

@@ -26,7 +26,6 @@ function reset() {                                                              
     document.getElementById("closebutton").setAttribute("style", "display:none");
 
     diven.getElementsByClassName("imgbox")[0].setAttribute("style","width:default;"+"height:default;");
-    klar=true;                                                                                          //gjør klar true, så popup kan kjøres.
-    
+    klar=true;                                                                                       //gjør klar true, så popup kan kjøres.
 }
 

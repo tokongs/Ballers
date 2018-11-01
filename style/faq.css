@@ -2,7 +2,11 @@ body{
     background-color: #353535;
 }
 
-/* Styler "sprørsmålsbarene" */
+/* Legge til pluss */
+.accordion:before{
+    content: "\002B \0020";
+}
+
 .accordion {
     background-color:#5A1848;
     font-size: 25px;
@@ -14,9 +18,14 @@ body{
     transition: 0.4s;
 }
 
+
 .active, .accordion:hover {
     background-color: #822368;
+}
 
+/* Legge til minus */
+.active:before{
+        content: "\002D \0020";
 }
 
 .artikkel{

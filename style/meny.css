@@ -23,7 +23,7 @@
     text-align: left;
     display: inline-block;
     position: relative;
-    height: 100%;
+    height: 60px;
     width: 20em;
     padding: 0;
     margin: 0 auto;
@@ -67,6 +67,7 @@
 
 
 #meny{
+    padding: 0;
     margin-left: 10%;
     list-style-type: none;
     overflow: visible;
@@ -98,14 +99,11 @@
         height: 120px;
     }
     #logo_link{
-        height: 40px;
         display: block;
         float: none;
         margin:auto;
     }
     #logo_link img{
-        height: 40px;
-        padding: 0px;
         display: block;
         float: none;
         margin:auto;

@@ -14,6 +14,7 @@ function popup(clicked_id){
     document.getElementById("closebutton").setAttribute("style", "display:block;");              //exit-knappen blir synlig
     diven.getElementsByClassName("imgbox")[0].setAttribute("style","width:30vw;"+"height:60vh;"); //bilde tilhørende aktuell div blir større
     
+    document.getElementById(clicked_id).classList.remove("hovererBart");
     }
     klar=false;                                                                                    //gjør klar til false, sånn at popup ikke kjøres før reset er kjørt.
     console.log(diven)
@@ -26,6 +27,23 @@ function reset() {                                                              
     document.getElementById("closebutton").setAttribute("style", "display:none");
 
     diven.getElementsByClassName("imgbox")[0].setAttribute("style","width:default;"+"height:default;");
-    klar=true;                                                                                       //gjør klar true, så popup kan kjøres.
+    
+    diven.classList.add("hovererBart");
+
+    klar=true;                                                                                               //gjør klar true, så popup kan kjøres.
 }
 
+
+
+
+
+/*
+artikel_popup
+function fokus(){
+if (klar){    
+   
+    document.querySelector(".artikkel:hover").setAttribute("style","opacity:0.7;"); 
+    console.log("test");
+}
+}
+*/

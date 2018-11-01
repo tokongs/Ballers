@@ -35,11 +35,12 @@ body{
     display: block;
     margin-bottom: 20px;
     overflow: hidden;
-
+    width: 100%;
 }
 
 #hoved_header > img{
-    height: 400px;
+    height: 300px;
+    width: 100%;
 }
 
 #hoved_header > h1{

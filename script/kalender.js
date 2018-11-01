@@ -40,6 +40,9 @@ function vis_kalender(dato) {
         let rad = document.createElement("tr");
         for (j = 0; j < 7; j++) {
             let celle = document.createElement("td");
+              console.log(months[currentMonth]);
+              console.log(currentYear);
+              celle.id = (j + 7 * i) - offset + 1;
             if(currentYear === new Date().getFullYear() && currentMonth === new Date().getMonth()){
                 if((j + 7 * i) - offset + 1 === new Date().getDate()){
                     celle.id = "today";
@@ -71,3 +74,10 @@ function next(){
     currentMonth = (currentMonth + 1) % 12;
     vis_kalender(new Date(currentYear, currentMonth));
 }
+
+// EVENTS
+
+document.getElementById("3").innerText = "3";
+document.getElementById("7").innerText = "7";
+document.getElementById("28").innerText = "28";
+document.getElementById("16").innerText = "16";

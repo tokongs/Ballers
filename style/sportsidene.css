@@ -4,7 +4,7 @@
 }
 
 .artikkel {
-    border-radius: 10px;
+    border-radius: 15px;
     height: 40vh;    
     overflow: hidden;    
     margin: 1vw 1vw 1vw 1vw;
@@ -16,7 +16,9 @@
 }
 
 .hovererBart:hover{
-    opacity: 0.5;
+    opacity: 0.8;
+    margin-left: 3vw;
+    margin-right:-1vw;
 }
 
 .imgbox {

@@ -29,7 +29,7 @@ function vis_kalender(dato) {
 
     monthAndYear.innerHTML = months[currentMonth] + " " + currentYear;
 
-    let forste_dag = new Date(dato.getFullYear(), dato.getMonth(), 1).getDay();
+    let forste_dag = new Date(dato.getFullYear(), dato.getMonth(), 1).getDay() - 1;
     let offset = forste_dag;
     let antall_dager = new Date(dato.getFullYear(), dato.getMonth() + 1, 0).getDate();
 
@@ -40,6 +40,8 @@ function vis_kalender(dato) {
         let rad = document.createElement("tr");
         for (j = 0; j < 7; j++) {
             let celle = document.createElement("td");
+          //  console.log(months[currentMonth] + (currentYear).toString() + ((j + 7 * i) - offset + 1).toString())
+              celle.id = months[currentMonth] + (currentYear).toString() + ((j + 7 * i) - offset + 1).toString();
             if(currentYear === new Date().getFullYear() && currentMonth === new Date().getMonth()){
                 if((j + 7 * i) - offset + 1 === new Date().getDate()){
                     celle.id = "today";
@@ -70,4 +72,26 @@ function next(){
     currentYear = currentMonth === 11 ? currentYear + 1 : currentYear;
     currentMonth = (currentMonth + 1) % 12;
     vis_kalender(new Date(currentYear, currentMonth));
+}
+
+// Modal
+
+var modal = document.getElementById("myModal");
+
+var trigger = document.getElementById("today");
+
+var close = document.getElementsByClassName("close")[0];
+
+trigger.onclick = function() {
+  modal.style.display = "block";
+}
+
+close.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }

@@ -13,34 +13,41 @@
 <body>
 
     <div id="meny-div"></div>
+    <header id="hoved_header">
+        <h1>Bli medlem i Ballers United</h1>
+    </header>
 
-    <form name="bli_medlem" action="action.html" method="post">
-        <!-- Hvor info fra formen blir sendt -->
-        <div>
-            <label for="navn">Navn:</label>
-            <input type="text" id="navn" name="navn" required>
+    <div id="innhold">
+        <div class="artikkel">
+            <form id="skjema" name="bli_medlem" action="action.html" method="post">
+                <!-- Hvor info fra formen blir sendt -->
+                <div>
+                    <label for="navn">Navn:</label>
+                    <input type="text" id="navn" name="navn" required>
+                </div>
+                <div>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="bruker_mail" required>
+                </div>
+                <div>
+                    <label id="lag">Lag:</label>
+                    <select name="lag" required>
+                        <option selected disabled></option>
+                        <option value="Fotball">Fotball</option>
+                        <option value="Håndball">Håndball</option>
+                        <option value="Basketball">Basketball</option>
+                    </select>
+                </div>
+                <div>
+                    <label id="mer_info">Mer info:</label>
+                    <textarea name="mer" rows="10" cols="20"></textarea>
+                </div>
+                <div>
+                    <input type="submit" id="knapp" value="Send inn">
+                </div>
+            </form>
         </div>
-        <div>
-            <label for="mail">E-mail:</label>
-            <input type="email" id="mail" name="bruker_mail" required>
-        </div>
-        <div>
-            <label id="lag">Lag:</label>
-            <select name="lag" required>
-                <option selected disabled></option>
-                <option value="Fotball">Fotball</option>
-                <option value="Håndball">Håndball</option>
-                <option value="Basketball">Basketball</option>
-            </select>
-        </div>
-        <div>
-            <label id="mer_info">Mer info:</label>
-            <textarea name="mer" rows="10" cols="20"></textarea>
-        </div>
-        <div>
-            <input type="submit" id="knapp" value="Send inn">
-        </div>
-    </form>
+    </div>
     <footer id="ballersFooter"> </footer>
     <script src="../modularitet/footer.js"></script>
     <script src="../modularitet/meny.js"></script>

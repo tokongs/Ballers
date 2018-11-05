@@ -2,45 +2,34 @@ body{
     background-color: #353535;
 }
 
-/* Styler "sprørsmålsbarene" */
+/* Legge til pluss */
+.accordion:before{
+    content: "\002B \0020";
+}
+
 .accordion {
     background-color:#5A1848;
-    color: #ffff;
-    font-family: 'Poppins', sans-serif;
     font-size: 25px;
-    cursor: pointer;
     padding: 18px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
-    transition: 0.4s;
+    transition: 0.2s;
 }
+
 
 .active, .accordion:hover {
-    background-color: #822368;
-
+    background-color: #8F115F;
 }
 
-.panel{
-    padding: 0 18px;
-    background-color: white;
+/* Legge til minus */
+.active:before{
+        content: "\002D \0020";
+}
+
+.artikkel{
+    padding: 10px 18px;
     display:none;
-    overflow:hidden;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-}
-
-.accordion:after {
-    content: '\02795';
-    /* pluss ikon*/
-
-    font-size: 13px;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: '\2796';
-    /* minus ikon */
+    margin-bottom: 10px;
 }

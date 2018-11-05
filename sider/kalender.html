@@ -7,8 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../style/base.css">
     <link rel="stylesheet" type="text/css" href="../style/meny.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet">
-
-
+    <link rel="stylesheet" type="text/css" href="../style/kalender.css">
     <style>
     </style>
 
@@ -18,29 +17,45 @@
     <div id="meny-div"></div>
     <div class="container col-sm-4 col-md-7 col-lg-4 mt-5">
         <header id="hoved_header">
-            <h1>Hva skjer fremover</h1>
+            <div id="imgCalendar">
+              <img src="../img/kalender.png" alt="Calendar"/>
+            </div>
+              <h1>Hva skjer fremover?</h1>
         </header>
         <div class="card">
-            <h3 class="card-header" id="monthAndYear">Month And Year<h3>
+          <div class="card-header">
+            <button class="btn btn-outline-primary col-sm-6" onclick="previous()">Previous</button>
+              <span id="monthAndYear">Month And Year</span>
+            <button class="btn btn-outline-primary col-sm-6" onclick="next()">Next</button>
+          </div>
                     <table class="table table-bordered table-responsive-sm" id="calendar">
                         <thead>
                             <tr>
-                                <th>Sun</th>
                                 <th>Mon</th>
                                 <th>Tue</th>
                                 <th>Wed</th>
                                 <th>Thu</th>
                                 <th>Fri</th>
                                 <th>Sat</th>
-                            <tr>
+                                <th>Sun</th>
+                            </tr>
                         </thead>
 
                         <tbody id="calendar-body"></tbody>
                     </table>
-                    <div class="form-inline">
-                        <button class="btn btn-outline-primary col-sm-6" onclick="previous()">Previous</button>
-                        <button class="btn btn-outline-primary col-sm-6" onclick="next()">Next</button>
-                    </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>EVENTS</h2>
+          </div>
+          <div class="modal-body">
+            <p>1. NOVEMBER GOD HELG</p>
+            <p>2. NOVEMBER ONLINE CASINO</p>
+          </div>
         </div>
     </div>
 

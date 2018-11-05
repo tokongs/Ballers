@@ -6,26 +6,9 @@
   <title>Kontakt</title>
   <link rel="stylesheet" type="text/css" href="../style/meny.css">
   <link rel="stylesheet" type="text/css" href="../style/base.css">
+  <link rel="stylesheet" type="text/css" href="../style/kontakt.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet">
 
-  <style type="text/css">
-    .artikkel {
-      text-align: center;
-      margin-left: 3%;
-      margin-right: 3%;
-      height: 160px;
-    }
-
-    .artikkel>img {
-      float: left;
-      height: 100%;
-      width: 150px;
-    }
-
-    .mail {
-      background-color: #353535;
-    }
-  </style>
 
 </head>
 
@@ -35,30 +18,38 @@
     <img src="../img/hovedbilde.png">
     <h1>Kontakt</h1>
   </header>
+  <form method="post">
+    <div id="nyDiv">
+      <textarea id="text"></textarea><br>
+      <div id="btn">
+        <input id="submit" type="submit" value="submit">
+        <input id="cancel" type="button" value="cancel">
+      </div>
+    </div>
+  </form>
 
-  <div id="innhold">
-    <div class="artikkel">
-      <img src="../img/jin.png">
-      <h2>Jin Tony</h2>
-      <p>Mobil: 93828833</p>
-      <p>Mail: <a class="mail" href="mailto:jinto@ntnu.no">jinto@ntnu.no</a></p>
-    </div>
-    <div class="artikkel">
-      <img src="../img/mama_jin.png">
-      <h2>Mamma Jin</h2>
-      <p>Mobil: 93858833</p>
-      <p>Mail: <a class="mail" href="mailto:mamatony@gmail.no">mamatony@gmail.no</a></p>
-    </div>
-    <div class="artikkel">
-      <img src="../img/jin.png">
-      <h2>Pappa Jin</h2>
-      <p>Mobil: 93828033</p>
-      <p>Mail: <a class="mail" href="mailto:jin@pappa.no">jin@pappa.no</a></p>
-    </div>
+  <div class="artikkel">
+    <img id="jin" src="../img/jin.png">
+    <h2>Jin Tony</h2>
+    <p>Mobil: 93828833</p>
+    <p>Mail: <a class="mail" href="mailto:jinto@ntnu.no">jinto@ntnu.no</a></p>
+  </div>
+  <div class="artikkel">
+    <img id="mama" src="../img/mama_jin.png">
+    <h2>Mamma Jin</h2>
+    <p>Mobil: 93858833</p>
+    <p>Mail: <a class="mail" href="mailto:mamatony@gmail.no">mamatony@gmail.no</a></p>
+  </div>
+  <div class="artikkel">
+    <img id="papa" src="../img/jin.png">
+    <h2>Pappa Jin</h2>
+    <p>Mobil: 93828033</p>
+    <p>Mail: <a class="mail" href="mailto:jin@pappa.no">jin@pappa.no</a></p>
   </div>
   <footer id="ballersFooter"> </footer>
   <script src="../modularitet/footer.js"></script>
   <script src="../modularitet/meny.js"></script>
+  <script src="../script/kontakt.js"></script>
 </body>
 
 </html>

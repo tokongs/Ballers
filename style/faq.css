@@ -15,12 +15,12 @@ body{
     text-align: left;
     border: none;
     outline: none;
-    transition: 0.4s;
+    transition: 0.2s;
 }
 
 
 .active, .accordion:hover {
-    background-color: #822368;
+    background-color: #8F115F;
 }
 
 /* Legge til minus */

@@ -21,6 +21,15 @@ let monthAndYear = document.getElementById("monthAndYear");
 let kalender = document.getElementById("calendar-body");
 
 
+var eventer = new Map([
+      [new Date(2018, 10, 11).getTime(), ["Kampdag", "Avslutning"]],
+      [new Date(2018, 10, 18).getTime(), ["Teambuilding"]],
+    ]);
+
+    ukentligEvent(new Date(2018, 7, 13), 104, ["Fotballtrening"]);
+    ukentligEvent(new Date(2018, 7, 15), 104, ["Håndballtrening"]);
+    ukentligEvent(new Date(2018, 7, 17), 104, ["Basketballtrening"]);
+
 vis_kalender(new Date());
 function vis_kalender(dato) {
     while(kalender.firstChild){
@@ -33,22 +42,16 @@ function vis_kalender(dato) {
     let offset = forste_dag;
     let antall_dager = new Date(dato.getFullYear(), dato.getMonth() + 1, 0).getDate();
 
-    const eventer = new Map([
-        [new Date(2018, 10, 11).getTime(), ["En hendelse", "Two in a row"]],
-        [new Date(2018, 10, 18).getTime(), ["en annen hendelse"]]
-        ]);
-
     for (i = 0; i < 6; i++) {
         let rad = document.createElement("tr");
         for (j = 0; j < 7; j++) {
             let celle = document.createElement("td");
             let border = document.createElement("p");
-            console.log(months[currentMonth] + (currentYear).toString() + ((j + 7 * i) - offset + 1).toString())
+            //console.log(months[currentMonth] + (currentYear).toString() + ((j + 7 * i) - offset + 1).toString())
               celle.id = months[currentMonth] + (currentYear).toString() + ((j + 7 * i) - offset + 1).toString();
             if(currentYear === new Date().getFullYear() && currentMonth === new Date().getMonth()){
                 if((j + 7 * i) - offset + 1 === new Date().getDate()){
                     celle.id = "today";
-                    celle.onclick = openModal;
                 }
             rad.appendChild(celle);
             }
@@ -86,6 +89,16 @@ function lagEventListe(celle, eventer){
     celle.className = "har_hendelse"
     celle.appendChild(liste)
 }
+
+function ukentligEvent(dato, antallUker, eventNavn) {
+    for(let i = 0; i < antallUker; i++) {
+    dato.setDate(dato.getDate() + 7);
+    eventer.set(dato.getTime(), eventNavn);
+    }
+}
+
+
+
 function previous(){
     currentYear = currentMonth === 0 ? currentYear - 1 : currentYear;
     currentMonth = currentMonth === 0 ? 11: currentMonth - 1;
@@ -98,25 +111,3 @@ function next(){
     currentMonth = (currentMonth + 1) % 12;
     vis_kalender(new Date(currentYear, currentMonth));
 }
-
-// Modal Events
-
-var modal = document.getElementById("myModal");
-var close = document.getElementsByClassName("close")[0];
-close.onclick = function() {
-modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-function openModal() {
-    modal.style.display = "block";
-  }
-
-var eventNode = document.createElement("LI");
-var event = document.createTextNode("10. november Frekk + Freidig @Diskoteket");
-eventNode.appendChild(event);
-document.getElementById("modal-body").appendChild(eventNode);

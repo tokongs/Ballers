@@ -4,7 +4,7 @@
 let diven=Element;    
 //Variabel som sikrer at det bare er en "Popup"-artikkel om gangen                                                             
 let klar=true;
-const antallArtikkel = document.getElementsByClassName("artikkel");
+const antallArtikler = document.getElementsByClassName("artikkel");
 
 function popup(clicked_id){                             
     if (klar) {
@@ -20,8 +20,8 @@ function popup(clicked_id){
         diven.getElementsByClassName("imgbox")[0].setAttribute("style","width:30vw;"+"height:60vh;");
 
          //fjerner hoverfunksjonen/class på alle artikkler
-        for (let i=0; i < antallArtikkel.length; i++){                                                     
-            antallArtikkel[i].className = "artikkel";                                                   
+        for (let i=0; i < antallArtikler.length; i++){                                                     
+            antallArtikler[i].className = "artikkel";                                                   
         }
             
     }
@@ -31,7 +31,7 @@ function popup(clicked_id){
 }
    
 
-function reset() {                                                                                  //resetter alle forandringene popup.js gjorde
+function reset() {                                                          //resetter alle forandringene popup.js gjorde
     diven.setAttribute("style", "background-color: default;"+"width:default;"
     +"height:default;"+"z-index=default;"+"position:default;"+"left:default;"+ "top:default;");
     
@@ -39,8 +39,8 @@ function reset() {                                                              
 
     diven.getElementsByClassName("imgbox")[0].setAttribute("style","width:default;"+"height:default;");  
     
-    for (let i=0 ; i < antallArtikkel.length; i++){                                           //legger til hover funksjonen/class
-        antallArtikkel[i].className = "artikkel hovererBart";
+    for (let i=0 ; i < antallArtikler.length; i++){             //legger til hover funksjonen/class
+        antallArtikler[i].className = "artikkel hovererBart";
     }
     //så popup kan kjøres.
     klar=true;                                                                               

@@ -20,10 +20,9 @@ const top_level_item_class_name = "top_level_item";
 
 //Menyen skal legges inne i en div med id "meny-div". Denne div'en må lages i html dokumentet
 const maal = document.querySelector("#meny-div");
-//Menyen skal lages inne i en header tag.
+
 let header = document.createElement("header");
 
-//Menyen er en unordered list
 let meny_liste = document.createElement("ul");
 meny_liste.id = "meny"
 
@@ -62,7 +61,6 @@ function dropUp(class_name) {
 //Lag menyen som dom elementer
 //Loop gjennom alle underlistene i meny
 for (let i = 0; i < meny.length; i++) {
-    //underliste for en av undermenyene
     let underliste = document.createElement("ul");
 
 
@@ -79,7 +77,6 @@ for (let i = 0; i < meny.length; i++) {
             link.href = sider[i][j];
         }
 
-        //Sett id og klasser
         child.id = sublist_item_id_prefix + meny[i][j];
         //Hvis child ikke er "top level"
         if (j > 0) {

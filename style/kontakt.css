@@ -51,3 +51,6 @@
 #btn{
   text-align: center;
 }
+.bildediv:hover{
+  opacity: 0.5;
+}

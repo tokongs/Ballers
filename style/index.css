@@ -3,6 +3,11 @@
     width: 32%;
     margin-left: 1%;
     margin-bottom: 10px;
+    transition: 0.4;
+}
+
+.seksjon:hover{
+    opacity: 0.9;
 }
 
 .seksjon img {
@@ -10,12 +15,18 @@
     height: 32vh;
     box-shadow: 4px 4px 15px black;
     background-color: #353535;
+    border-radius: 15px;
+
 }
 
 .artikkel {
     height: 350px;
+    overflow: hidden;
+    margin-top: 30px;
 }
-
+a{
+    text-decoration: none;
+}
 @media only screen and (max-width: 980px){
     .seksjon{
         float: none;

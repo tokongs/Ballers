@@ -28,6 +28,17 @@ body{
 .artikkel{
     box-shadow: 4px 4px 15px black;
     background-color: #353535;
+    border-radius: 15px;
+    
+}
+
+.artikkel_header{
+    padding: 20px 20px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.artikkel_body{
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #hoved_header{

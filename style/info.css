@@ -1,14 +1,4 @@
-h1 {
-  background-color: #53143B;
-  color: #FFFFFF;
-  height: 60px;
-  padding-top: 20px;
-  font-size: 50px;
-  margin-top: -5px;
-}
-
 .artikkel {
-  border-radius: 20px;
   width: 70%;
   float: left;
   text-align: center;

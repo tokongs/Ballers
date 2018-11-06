@@ -22,17 +22,18 @@ let kalender = document.getElementById("calendar-body");
 
 
 var eventer = new Map([
-      [new Date(2018, 10, 11).getTime(), ["Kampdag", "Avslutning"]],
-      [new Date(2018, 10, 18).getTime(), ["Teambuilding"]],
-    ]);
+    [new Date(2018, 10, 11).getTime(), ["Kampdag", "Avslutning"]],
+    [new Date(2018, 10, 18).getTime(), ["Teambuilding"]],
+    [new Date(2018, 10, 9).getTime(), ["Teambuilding"]],
+]);
 
-    ukentligEvent(new Date(2018, 7, 13), 104, ["Fotballtrening"]);
-    ukentligEvent(new Date(2018, 7, 15), 104, ["Håndballtrening"]);
-    ukentligEvent(new Date(2018, 7, 17), 104, ["Basketballtrening"]);
+ukentligEvent(new Date(2018, 7, 13), 104, ["Fotballtrening"]);
+ukentligEvent(new Date(2018, 7, 15), 104, ["Håndballtrening"]);
+ukentligEvent(new Date(2018, 7, 17), 104, ["Basketballtrening"]);
 
 vis_kalender(new Date());
 function vis_kalender(dato) {
-    while(kalender.firstChild){
+    while (kalender.firstChild) {
         kalender.removeChild(kalender.firstChild);
     }
 
@@ -48,12 +49,12 @@ function vis_kalender(dato) {
             let celle = document.createElement("td");
             let border = document.createElement("p");
             //console.log(months[currentMonth] + (currentYear).toString() + ((j + 7 * i) - offset + 1).toString())
-              celle.id = months[currentMonth] + (currentYear).toString() + ((j + 7 * i) - offset + 1).toString();
-            if(currentYear === new Date().getFullYear() && currentMonth === new Date().getMonth()){
-                if((j + 7 * i) - offset + 1 === new Date().getDate()){
+            celle.id = months[currentMonth] + (currentYear).toString() + ((j + 7 * i) - offset + 1).toString();
+            if (currentYear === new Date().getFullYear() && currentMonth === new Date().getMonth()) {
+                if ((j + 7 * i) - offset + 1 === new Date().getDate()) {
                     celle.id = "today";
                 }
-            rad.appendChild(celle);
+                rad.appendChild(celle);
             }
 
             naa_dato = new Date(currentYear, currentMonth, (j + 7 * i) - offset + 1);
@@ -74,14 +75,14 @@ function vis_kalender(dato) {
     }
 }
 
-function lagEventListe(celle, eventer){
+function lagEventListe(celle, eventer) {
 
-    if(eventer == undefined)
+    if (eventer == undefined)
         return;
 
     liste = document.createElement("ul");
 
-    for(let i = 0; i < eventer.length; i++){
+    for (let i = 0; i < eventer.length; i++) {
         event = document.createElement("li");
         event.innerHTML = eventer[i];
         liste.appendChild(event);
@@ -91,22 +92,31 @@ function lagEventListe(celle, eventer){
 }
 
 function ukentligEvent(dato, antallUker, eventNavn) {
-    for(let i = 0; i < antallUker; i++) {
-    dato.setDate(dato.getDate() + 7);
-    eventer.set(dato.getTime(), eventNavn);
+
+    for (let i = 0; i < antallUker; i++) {
+        dagensEventer = eventer.get(dato.getTime());
+        if (dagensEventer != undefined) {
+            dagensEventer.push(eventNavn)
+            eventer.set(dato.getTime(), dagensEventer);
+
+        } else {
+            eventer.set(dato.getTime(), eventNavn);
+        }
+
+        dato.setDate(dato.getDate() + 7);
     }
 }
 
 
 
-function previous(){
+function previous() {
     currentYear = currentMonth === 0 ? currentYear - 1 : currentYear;
-    currentMonth = currentMonth === 0 ? 11: currentMonth - 1;
+    currentMonth = currentMonth === 0 ? 11 : currentMonth - 1;
     vis_kalender(new Date(currentYear, currentMonth));
 
 }
 
-function next(){
+function next() {
     currentYear = currentMonth === 11 ? currentYear + 1 : currentYear;
     currentMonth = (currentMonth + 1) % 12;
     vis_kalender(new Date(currentYear, currentMonth));

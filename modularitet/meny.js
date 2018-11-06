@@ -88,10 +88,8 @@ for (let i = 0; i < meny.length; i++) {
         }
 
 
-        //Sett link teksten fra meny arrayet
         link.innerHTML = meny[i][j];
 
-        //link ting
         child.appendChild(link);
         underliste.appendChild(child);
     }
@@ -103,6 +101,5 @@ for (let i = 0; i < meny.length; i++) {
     meny_liste.appendChild(top);
 }
 
-//Legg til meny til dokumentet
 header.appendChild(meny_liste);
 maal.appendChild(header);

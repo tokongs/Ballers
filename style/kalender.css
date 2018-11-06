@@ -63,9 +63,7 @@ button {
 button:hover {
   font-weight: 700;
   letter-spacing: 3px;
-  background: none;
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
   transition: all 0.3s ease 0s;
 }
 
@@ -73,18 +71,21 @@ td {
   border: none;
   background: #404040;
   color: #ffffff;
-  padding-top: 0.5%;
-  padding-left: 0.5%;
+  padding: 0;
   text-transform: uppercase;
-  padding-bottom: 5%;
-  padding-right: 5%;
+  width: 130px;
+  max-width: 130px;
+  height: 130px;
+  position: relative;
+}
+
+td p {
+  background: none;
 }
 
 td:hover {
-  font-weight: 700;
   background: none;
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
   transition: all 0.3s ease 0s;
 }
 
@@ -95,8 +96,7 @@ th {
 #today {
   font-weight: 700;
   background: none;
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
 }
 
 /* MODAL */
@@ -148,6 +148,24 @@ th {
   color: white;
 }
 
-.modal-body {
-  padding: 2px 16px;
+#modal-body {
+  list-style-type: none;
+}
+
+.har_hendelse ul{
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+  width: 80%;
+
+}
+
+.har_hendelse li{
+  background-color: #8F115F;
+  margin: 2px;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
 }

@@ -52,9 +52,10 @@
 }
 .close{
     position: fixed;
-    left: 85.3vw;
+    left: 85vw;
     top:13.5vh;
-    font-size: 50px;
+    font-size: 50px;    
+    border-radius: 4px;
     display: none;
     color: #53143B;
     background-color: #f1f1f1; 

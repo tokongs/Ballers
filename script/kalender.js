@@ -62,6 +62,7 @@ function vis_kalender(dato) {
             if (j >= forste_dag) {
                 border.innerHTML = (j + 7 * i) - offset + 1;
                 celle.appendChild(border);
+                lagEventListe(celle, naa_eventer)
                 forste_dag = 0;
             }
             rad.appendChild(celle);

@@ -63,9 +63,7 @@ button {
 button:hover {
   font-weight: 700;
   letter-spacing: 3px;
-  background: none;
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
   transition: all 0.3s ease 0s;
 }
 
@@ -81,10 +79,13 @@ td {
   position: relative;
 }
 
+td p {
+  background: none;
+}
+
 td:hover {
   background: none;
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
   transition: all 0.3s ease 0s;
 }
 
@@ -95,8 +96,7 @@ th {
 #today {
   font-weight: 700;
   background: none;
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
 }
 
 /* MODAL */
@@ -148,8 +148,8 @@ th {
   color: white;
 }
 
-.modal-body {
-  padding: 2px 16px;
+#modal-body {
+  list-style-type: none;
 }
 
 .har_hendelse ul{

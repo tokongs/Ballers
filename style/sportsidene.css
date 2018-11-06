@@ -71,7 +71,8 @@
     background-color: #53143B;
     margin-left: 2vw;
 }
-@media only screen and (max-width: 950px){
+
+@media only screen and (max-width: 950px){    /*alt blir under hverandre når skjermen er liten */
     #infobar{
     float: none;
     margin: auto;               

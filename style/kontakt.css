@@ -9,14 +9,21 @@
 }
 
 .bildediv{
+  position: relative;
   float: left;
   height: 100%;
   width: 180px;
 }
 
-.bildediv>img {
+.bildediv > img {
   height: 100%;
   width: 180px;
+}
+.bildetext{
+  position: absolute;
+  bottom: 5px;
+  left: 16px;
+  color: black;
 }
 
 .mail {
@@ -50,4 +57,7 @@
 }
 #btn{
   text-align: center;
+}
+.bildediv:hover{
+  opacity: 0.5;
 }

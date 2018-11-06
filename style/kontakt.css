@@ -9,6 +9,7 @@
 }
 
 .bildediv{
+  position: relative;
   float: left;
   height: 100%;
   width: 180px;
@@ -17,6 +18,12 @@
 .bildediv>img {
   height: 100%;
   width: 180px;
+}
+.bildetext{
+  position: absolute;
+  bottom: 5px;
+  left: 16px;
+  color: black;
 }
 
 .mail {

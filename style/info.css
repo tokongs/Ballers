@@ -5,22 +5,13 @@
   margin-left: 2%;
 }
 
-.kart {
-  border-radius: 15px;
+#kart {
   overflow: hidden;
   float: right;
   background-color: #53143B;
-  color: #FFFFFF;
   width: 24%;
   text-align: center;
   margin-left: 2%;
   margin-right: 2%;
   height: 500px;
-}
-
-.kart p {
-  background-color: #53143B;
-  padding-top: 2px;
-  margin-top: 0px;
-  margin-bottom: 3px;
 }

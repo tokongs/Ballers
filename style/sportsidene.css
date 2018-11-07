@@ -40,13 +40,13 @@
 }
 
 #infobar {
-    border-radius: 10px; 
     float: right;
     right: 1vw;
     width: 25%;
     background-color: #53143B;
     margin: 1vw 0vw;
     height: 95%;
+
 }
 .close{
     position: fixed;
@@ -62,13 +62,6 @@
     color:red;             
     cursor: pointer;   
 }   
-
-#infobar p,
-#infobar h1,
-#infobar h2 {
-    background-color: #53143B;
-    margin-left: 2vw;
-}
 
 @media only screen and (max-width: 950px){    /*alt blir under hverandre når skjermen er liten */
     #infobar{

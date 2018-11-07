@@ -10,7 +10,7 @@ html{
 }
 
 p, h2, h3, h4, h5, h6{
-    background-color: #353535;
+    background-color: rgba(0, 0, 0, 0);
 }
 body{
     height: 100%;

@@ -43,7 +43,7 @@ function reset() {                                                          //re
     tilbakeKnapp.style.display = "none";
     
     for (let i=0 ; i < antallArtikler.length; i++){             //legger til hover funksjonen/class
-        antallArtikler[i].className = "artikkel hovererBart";
+        antallArtikler[i].className = "artikkel hovererbart";
     }
     //så popup kan kjøres.
     klar=true;            

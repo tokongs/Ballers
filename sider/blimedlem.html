@@ -23,15 +23,15 @@
                 <!-- Hvor info fra formen blir sendt -->
                 <div>
                     <label for="navn">Navn:</label>
-                    <input placeholder="Ditt navn" type="text" id="navn" name="navn">
+                    <input placeholder="Ditt navn" type="text" id="navn" name="navn" required>
                 </div>
                 <div>
                     <label for="mail">E-mail:</label>
-                    <input placeholder="Din e-post" type="email" id="mail" name="bruker_mail">
+                    <input placeholder="Din e-post" type="email" id="mail" name="bruker_mail" required>
                 </div>
                 <div>
                     <label id="lag">Lag:</label>
-                    <select name="lag">
+                    <select name="lag" required>
                         <option disabled selected value> -- Velg en idrett --</option>
                         <option value="Fotball">Fotball</option>
                         <option value="Håndball">Håndball</option>

@@ -41,7 +41,7 @@ label[for=navn] {
 #navn {
     display:block;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px black;
     width:50%;
     height:35px;
     font-family: 'Poppins', sans-serif;

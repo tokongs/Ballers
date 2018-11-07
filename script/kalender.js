@@ -1,23 +1,23 @@
-let today = new Date();
-let currentMonth = today.getMonth();
-let currentYear = today.getFullYear();
+let idag = new Date();
+let innevarendeMaaned = idag.getMonth();
+let innevarendeAar = idag.getFullYear();
 
 let months = [
     "Jan",
     "Feb",
     "Mar",
     "Apr",
-    "May",
+    "Mai",
     "Jun",
     "Jul",
     "Aug",
     "Sept",
     "Oct",
     "Nov",
-    "Dec"
+    "Des"
 ];
 
-let monthAndYear = document.getElementById("monthAndYear");
+let maanedOgAar = document.getElementById("maanedOgAar");
 let kalender = document.getElementById("calendar-body");
 
 
@@ -37,7 +37,7 @@ function vis_kalender(dato) {
         kalender.removeChild(kalender.firstChild);
     }
 
-    monthAndYear.innerHTML = months[currentMonth] + " " + currentYear;
+    maanedOgAar.innerHTML = months[innevarendeMaaned] + " " + innevarendeAar;
 
     let forste_dag = new Date(dato.getFullYear(), dato.getMonth(), 1).getDay() - 1;
     let offset = forste_dag;
@@ -48,16 +48,16 @@ function vis_kalender(dato) {
         for (j = 0; j < 7; j++) {
             let celle = document.createElement("td");
             let border = document.createElement("p");
-            //console.log(months[currentMonth] + (currentYear).toString() + ((j + 7 * i) - offset + 1).toString())
-            celle.id = months[currentMonth] + (currentYear).toString() + ((j + 7 * i) - offset + 1).toString();
-            if (currentYear === new Date().getFullYear() && currentMonth === new Date().getMonth()) {
+            //console.log(months[innevarendeMaaned] + (innevarendeAar).toString() + ((j + 7 * i) - offset + 1).toString())
+            celle.id = months[innevarendeMaaned] + (innevarendeAar).toString() + ((j + 7 * i) - offset + 1).toString();
+            if (innevarendeAar === new Date().getFullYear() && innevarendeMaaned === new Date().getMonth()) {
                 if ((j + 7 * i) - offset + 1 === new Date().getDate()) {
-                    celle.id = "today";
+                    celle.id = "idag";
                 }
                 rad.appendChild(celle);
             }
 
-            naa_dato = new Date(currentYear, currentMonth, (j + 7 * i) - offset + 1);
+            naa_dato = new Date(innevarendeAar, innevarendeMaaned, (j + 7 * i) - offset + 1);
             naa_eventer = eventer.get(naa_dato.getTime());
 
             if (((j + 7 * i) - offset + 1) > antall_dager) {
@@ -109,15 +109,15 @@ function ukentligEvent(dato, antallUker, eventNavn) {
 
 
 
-function previous() {
-    currentYear = currentMonth === 0 ? currentYear - 1 : currentYear;
-    currentMonth = currentMonth === 0 ? 11 : currentMonth - 1;
-    vis_kalender(new Date(currentYear, currentMonth));
+function forrige() {
+    innevarendeAar = innevarendeMaaned === 0 ? innevarendeAar - 1 : innevarendeAar;
+    innevarendeMaaned = innevarendeMaaned === 0 ? 11 : innevarendeMaaned - 1;
+    vis_kalender(new Date(innevarendeAar, innevarendeMaaned));
 
 }
 
-function next() {
-    currentYear = currentMonth === 11 ? currentYear + 1 : currentYear;
-    currentMonth = (currentMonth + 1) % 12;
-    vis_kalender(new Date(currentYear, currentMonth));
+function neste() {
+    innevarendeAar = innevarendeMaaned === 11 ? innevarendeAar + 1 : innevarendeAar;
+    innevarendeMaaned = (innevarendeMaaned + 1) % 12;
+    vis_kalender(new Date(innevarendeAar, innevarendeMaaned));
 }

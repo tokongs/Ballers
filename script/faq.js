@@ -7,7 +7,7 @@ for (i = 0; i < acc.length; i++) {
         this.classList.toggle("active");
 
         // Skjuler og viser det aktive panelet
-        var panel = this.nextElementSibling;
+        var panel = this.nesteElementSibling;
         if (panel.style.display === "block") {
             panel.style.display = "none";
         } else {

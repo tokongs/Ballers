@@ -12,7 +12,6 @@ function popup(clicked_id){
         console.log(clicked_id)
         tilbakeKnapp = popupArtikkel.getElementsByTagName("button")[0];
         tilbakeKnapp.style.display = "block";
-        tilbakeKnapp.style.zindex = "2"
         //gjør aktuelle popupArtikkel til stor popup med style.
 
         popupArtikkel.setAttribute("style","width:80vw;"+"height:80vh;"+"z-index=1;"                         
@@ -28,7 +27,7 @@ function popup(clicked_id){
     }
 
     popupArtikkel.onclick = ""
-    console.log(popupArtikkel.onClick)
+
     //sånn at popup ikke kjøres før reset er kjørt.
     klar=false;                                                                                    
 }
@@ -39,13 +38,15 @@ function reset() {                                                          //re
     +"height:default;"+"z-index=default;"+"position:default;"+"left:default;"+ "top:default;");
 
     popupArtikkel.getElementsByClassName("imgbox")[0].setAttribute("style","width:default;"+"height:default;");  
+
+    tilbakeKnapp = popupArtikkel.getElementsByTagName("button")[0];
+    tilbakeKnapp.style.display = "none";
     
     for (let i=0 ; i < antallArtikler.length; i++){             //legger til hover funksjonen/class
         antallArtikler[i].className = "artikkel hovererBart";
     }
     //så popup kan kjøres.
     klar=true;            
-    console.log("test")
     
   setTimeout((() => popupArtikkel.onclick = function(){popup(popupArtikkel.id)}), 200);
 }

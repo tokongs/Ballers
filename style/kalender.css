@@ -43,8 +43,11 @@ table {
   display: inline-block;
 }
 
-
+.knapp{
+  width: 100px;
+}
 .knapp:hover {
+  width: 100px;
   font-weight: 700;
   letter-spacing: 3px;
   box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
@@ -63,6 +66,12 @@ td {
   position: relative;
 }
 
+td:hover {
+  background: none;
+  box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
+}
+
 td p {
   background: none;
   position: absolute;
@@ -70,11 +79,7 @@ td p {
   left: 5px;
 }
 
-td:hover {
-  background: none;
-  box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  transition: all 0.3s ease 0s;
-}
+
 
 th {
   text-align: left;

@@ -7,6 +7,7 @@
     height: 40vh;    
     margin: 1vw 1vw 1vw 1vw;
     transition: 0.2s;
+    position: relative;
 }
 
 .artikkel img {
@@ -48,6 +49,14 @@
     height: 95%;
 
 }
+
+.knapp{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
 .close{
     position: fixed;
     left: 85vw;

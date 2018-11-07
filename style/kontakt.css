@@ -50,6 +50,7 @@
   color: #000000;
   margin-left:10%;
   margin-top: 5%;
+  resize: none;
 }
 #cancel{
   color:#000000;

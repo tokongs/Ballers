@@ -11,10 +11,10 @@ body{
     background-color: #F1F1F1;
 }
 
-.article{
+article{
     margin: auto;
     text-align: center;
-    width: 50%;
+    width: 80%;
     background-color: #353535;
 }
 

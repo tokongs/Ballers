@@ -12,6 +12,10 @@ html{
 p, h2, h3, h4, h5, h6{
     background-color: rgba(0, 0, 0, 0);
 }
+h2{
+    font-size: 1.2;
+    font-weight: 700;
+}
 body{
     height: 100%;
     padding: 0;
@@ -37,6 +41,8 @@ body{
     background-color: rgba(0, 0, 0, 0);
 }
 
+
+/*HEADER*/
 #hoved_header{
     font-size: 0;
     display: block;
@@ -58,6 +64,8 @@ body{
     height: 50px;
     margin:0;
 }
+
+/*FOOTER*/
 
 #ballersFooter {
   background-color: #3A3A3A;
@@ -90,3 +98,123 @@ body{
     border-radius: 6px;
     display: inline-block;
   }
+
+/* MENY */
+#meny-div{
+    height: 60px;
+    width: 100%;
+}
+
+#meny-div header{
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #53143B;
+    color: white;
+    overflow: visible;
+    z-index: 1;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+
+
+#logo_link{
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    width: 20em;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #53143B;
+
+}
+
+#logo_link > img{
+    background-color: #53143B;
+    height: 50px;
+    padding: 5px;
+    margin: auto;
+    width: auto;
+}
+#meny a:hover{
+    background-color: #8F115F;
+}
+
+#meny li:first-child > a{
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+}
+
+#meny ul,#meny li, #meny a{
+    height: 40px;
+    background-color: #53143B;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+    margin: auto;
+}
+
+#meny a {
+    padding-bottom: 10px;
+    height: 30px;
+    vertical-align: text-bottom;
+    transition: 0.2s;
+}
+
+
+
+#meny{
+    padding: 0;
+    margin-left: 10%;
+    list-style-type: none;
+    overflow: visible;
+    display: inline-block;
+    height: 60px;
+    width: 600px;
+    margin: auto;
+}
+
+#meny > li{
+    float: left;
+    height: 60px;
+    width: 150px;
+}
+
+#meny > li > ul > li:first-child{
+    height: 60px;
+}
+
+#meny .sublist_item{
+    display: none;
+}
+
+@media only screen and (max-width: 1260px){
+    #meny-div{
+        height: 120px;
+    }
+    #meny-div header{
+        height: 120px;
+    }
+    #logo_link{
+        display: block;
+        float: none;
+        margin:auto;
+    }
+    #logo_link img{
+        display: block;
+        float: none;
+        margin:auto;
+    }
+    #meny{
+        display: block;
+        margin: auto;
+        float: none;
+    }
+}
+

@@ -14,10 +14,10 @@ var facebookLink = document.createElement("a");
 var snapchatLink = document.createElement("a");
 
 //Legger til ikonene til variablene
-twitterIcon.src = "../img/icons/twitterIcon.png";
-googleIcon.src = "../img/icons/googleplusIcon.png";
-facebookIcon.src = "../img/icons/facebookIcon.png";
-snapchatIcon.src = "../img/icons/snapchatIcon.png";
+twitterIcon.src = "../img/ikoner/twitterIcon.png";
+googleIcon.src = "../img/ikoner/googleplusIcon.png";
+facebookIcon.src = "../img/ikoner/facebookIcon.png";
+snapchatIcon.src = "../img/ikoner/snapchatIcon.png";
 
 //Legger til link
 //Åpner ny fane når man trykker på ikonet

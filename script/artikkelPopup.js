@@ -11,7 +11,7 @@ function popup(artikkel) {
         //gjør aktuelle popupArtikkel til stor popup med style.
 
         artikkel.setAttribute("style", "width:80vw;" + "height:80vh;" + "z-index=1;"
-            + "position:fixed;" + "left:5vw;" + "top:5vw;" + "border:solid #f1f1f1 8px;" + "z-index:1;");
+            + "position:fixed;" + "left:5vw;" + "top:5vw;" + "border:solid #f1f1f1 2px;" + "z-index:1;");
 
         //bilde tilhørende aktuell div blir større
         artikkel.getElementsByClassName("imgbox")[0].setAttribute("style", "width:30vw;" + "height:60vh;");

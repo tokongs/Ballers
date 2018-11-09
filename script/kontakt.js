@@ -1,7 +1,10 @@
 var popup = document.getElementById("popup");
-document.getElementById("jin").addEventListener("click",aktiverPopup);
-document.getElementById("mama").addEventListener("click",aktiverPopup);
-document.getElementById("papa").addEventListener("click",aktiverPopup);
+var bilder = document.getElementsByClassName("bildediv");
+for (var i = 0; i < bilder.length; i++) {
+  bilder[i].addEventListener("click",aktiverPopup);
+}
+
+
 console.log(popup)
 function aktiverPopup(){
   popup.setAttribute("style","height:60%;"+"left:2vw;"+ "bottom:10%;"

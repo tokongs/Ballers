@@ -16,7 +16,23 @@
   height: auto;
 }
 
+#kart .artikkel_body{
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+
 #googleMap{
   width:100%;
   height:250px;
+}
+
+@media only screen and (max-width:1260px){
+  .artikkel {
+    width: 96%;
+  }
+  #kart {
+    width: 96%;
+    margin-top: 30px;
+    float: left;
+  }
 }

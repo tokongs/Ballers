@@ -46,8 +46,21 @@
 
 #knapper{
   text-align: center;
-  max-height: 20%;
+  margin-bottom: 3px;
 }
+
+ @media only screen and (max-height:500px){
+  .knapp{
+    padding: 0px 0px 0px 0px;
+  }
+  #popup{
+    height: 35%;
+  }
+  #text{
+    height:60%;
+  }
+}
+
 .bildediv:hover{
   opacity: 0.5;
 }

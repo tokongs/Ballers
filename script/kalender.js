@@ -3,18 +3,18 @@ let innevarendeMaaned = idag.getMonth();
 let innevarendeAar = idag.getFullYear();
 
 let months = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
+    "Januar",
+    "Februar",
+    "Mars",
+    "April",
     "Mai",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sept",
-    "Oct",
-    "Nov",
-    "Des"
+    "Juni",
+    "Juli",
+    "August",
+    "September",
+    "Oktober",
+    "November",
+    "Desember"
 ];
 
 let maanedOgAar = document.getElementById("maanedOgAar");

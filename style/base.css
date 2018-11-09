@@ -33,7 +33,7 @@ body{
     box-shadow: 4px 4px 15px black;
     background-color: #353535;
     border-radius: 15px;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 .artikkel_header, .artikkel_body{
@@ -217,4 +217,3 @@ body{
         float: none;
     }
 }
-

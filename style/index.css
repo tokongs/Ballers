@@ -3,19 +3,27 @@
     width: 32%;
     margin-left: 1%;
     margin-bottom: 10px;
+    transition: 0.4;
 }
 
-.seksjon img {
-    width: 100%;
-    height: 32vh;
-    box-shadow: 4px 4px 15px black;
+.seksjon:hover{
+    opacity: 0.9;
+}
 
+img {
+    max-width: 100%;
+    max-height: 300px;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
 }
 
 .artikkel {
-    height: 350px;
+    height: 700px;
 }
-
+a{
+    text-decoration: none;
+}
 @media only screen and (max-width: 980px){
     .seksjon{
         float: none;

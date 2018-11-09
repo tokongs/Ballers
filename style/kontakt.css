@@ -1,28 +1,30 @@
 .artikkel {
-  border-radius: 20px;
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 20px;
   height: 200px;
-  overflow: hidden;
 }
 
 .bildediv{
+  position: relative;
   float: left;
   height: 100%;
   width: 180px;
 }
 
-.bildediv>img {
+.bildediv > img {
   height: 100%;
-  width: 180px;
+  width: 100%;
+}
+.bildetext{
+  position: absolute;
+  bottom: 5px;
+  left: 16px;
+  color: black;
 }
 
-.mail {
-  background-color: #353535;
-}
-#nyDiv{
+#popup{
   border-radius: 10px;
   position: fixed;
   width: 40%;
@@ -32,22 +34,20 @@
   background-color: #353535;
   display: none;
 }
-#submit{
-  color:#000000;
-  border-radius: 12px;
-}
 
 #text{
   width: 80%;
-  height: 80%;
+  height: 70%;
   color: #000000;
   margin-left:10%;
   margin-top: 5%;
+  resize: none;
 }
-#cancel{
-  color:#000000;
-  border-radius: 12px;
-}
-#btn{
+
+#knapper{
   text-align: center;
+  max-height: 20%;
+}
+.bildediv:hover{
+  opacity: 0.5;
 }

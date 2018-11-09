@@ -1,100 +1,103 @@
 <!DOCTYPE html>
 
-<html lang="nn">
+<html lang="nb">
 
 <head>
     <meta charset="utf-8">
-    <title>Ballers United</title>
     <link rel="stylesheet" type="text/css" href="../style/base.css">
-    <link rel="stylesheet" type="text/css" href="../style/meny.css">
     <link rel="stylesheet" type="text/css" href="../style/sportsidene.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet">
-    <title>Fotball</title>
+    <title>Fotball Ballers United</title>
 </head>
 
 <body>
     <div id="meny-div"></div>
 
     <header id="hoved_header">
-    <div id="bildediv">  
-        <img id="headerbilde" src="../img/fotball/tittelbilde.png" title="bilde">
-    </div>
+        <div id="bildediv">
+            <img id="headerbilde" src="../img/fotball/tittelbilde.png" title="bilde">
+        </div>
         <h1>FOTBALL</h1>
     </header>
     <div id="innhold">
-        <div id="infobar" class="seksjon">
-            <h2>Banetid</h2>
-            <p>Treningstider:</p>
-                    <p>MANDAG   16-20</p>
-                    <p>TIRSDAG  11-19</p>
-                    <p>ONSDAG   12-20</p>
-                    <p>TORSDAG  10-20</p>
-                    <p>FREDAG   16-20</p>
-                    <p>LØRDAG   10-18</p>
-                    <p>SØNDAG   16-20</p>
-            
+        <div id="infobar" class="artikkel">
+            <h2 class="artikkel_header">Banetid</h2>
+            <p class="artikkel_body">Treningstider:</p>
+            <ul>
+                <li>MANDAG 16-20</li>
+                <li>TIRSDAG 11-19</li>
+                <li>ONSDAG 12-20</li>
+                <li>TORSDAG 10-20</li>
+                <li>FREDAG 16-20</li>
+                <li>LØRDAG 10-18</li>
+                <li>SØNDAG 16-20</li>
+            </ul>
+
         </div>
 
-        <div id="hovedelen" class="seksjon">
-            <div class="artikkel hovererBart" id="artikkel4" onclick="popup(this.id)">
+        <div id="hovedelen">
+            <div class="artikkel hovererbart" id="artikkel4" onclick="popup(this)">
                 <div class="imgbox">
                     <img src="../img/fotball/jersey.png" title="draktbilde" alt="artikkel bilde">
                 </div>
-                <h2>Nye drakter har ankommet!</h2>
+                <h2 class="artikkel_header">Nye drakter har ankommet!</h2>
                 <p>
                     De nyye draktene fra Gucci har kommet. De kan hentes av trener/lagleder i klubbhuset
                     hele inneværende og neste uke.
                 </p>
+                <button class="knapp" onclick="reset(this)">X</button>
             </div>
 
-            <div class="artikkel hovererBart" id="artikkel3" onclick="popup(this.id)">
+            <div class="artikkel hovererbart" id="artikkel3" onclick="popup(this)">
                 <div class="imgbox">
                     <img src="../img/fotball/spiller.jpg" title="kampbilde" alt="artikkel bilde">
                 </div>
-                <h2>TIL SPANIA PÅ LANDSLAGSSAMLING</h2>
-                <p>                     
-                        Jesper Daland er igjen tatt ut på G18-landslaget.
-                        
-                        Forsiden / Nyheter /
-                        Jesper Daland har gått gradene på aldersbestemte landslag, og landslagsledelsen kunne ikke overse vår talentfulle midtstopper ved denne korsvei heller. 
-                        
-                        Daland er tatt ut i den 21-manns store troppen til samlingen i Spania. 
-                </p>                    
-                <p>
-                        Kristoffer Klaesson - Vålerenga,
-                        Mads Hedenstad Christiansen - Lillestrøm,
-                        Erik Tobias Sandberg - Lillestrøm,
-                        Jesper Daland - Ballers United, 
-                        Colin Rösler - Manchester City,
-                        Håkon Evjen - Bodø/Glimt,
-                        Emil Kalsaas - Brann,
-                        Mikael Ugland - Fløy,
-                        Johan Hove - Strømsgodset,
-                        Jonas Fredriksen - Sogndal,
-                        Sebastian Jarl - Kjelsås,
-                        Markus Solbakken - HamKam,
-                        Emil Kalsaas - Brann,
-                        Eirik Moldenes - Brann,
-                        Halldor Stenevik - Brann,
-                        Filip Møller Delaveris - Odd,
-                        Jørgen Strand Larsen - Sarpsborg 08,
-                        Erik Botheim - Rosenborg,
-                        Robert Williams - Rosenborg,
-                        Edvard Tagseth - Liverpool,
-                        Tobias Christensen - Start,
-                   </p> 
-                   <p>Hele ballers kommer til å følge spent med på utviklingen av dette talentet. Jesper viser hvordan Ballers
-                        United har et tilpasset opplegg for seriøse utøvere som har store planer innen sporten de utøver
-                   </p>           
-                
+                <h2 class="artikkel_header">TIL SPANIA PÅ LANDSLAGSSAMLING</h2>
+                <p class="artikkel_body">
+                    Jesper Daland er igjen tatt ut på G18-landslaget.
+
+                    Forsiden / Nyheter /
+                    Jesper Daland har gått gradene på aldersbestemte landslag, og landslagsledelsen kunne ikke overse
+                    vår talentfulle midtstopper ved denne korsvei heller.
+
+                    Daland er tatt ut i den 21-manns store troppen til samlingen i Spania.
+                </p>
+                <p class="artikkel_body">
+                    Kristoffer Klaesson - Vålerenga,
+                    Mads Hedenstad Christiansen - Lillestrøm,
+                    Erik Tobias Sandberg - Lillestrøm,
+                    Jesper Daland - Ballers United,
+                    Colin Rösler - Manchester City,
+                    Håkon Evjen - Bodø/Glimt,
+                    Emil Kalsaas - Brann,
+                    Mikael Ugland - Fløy,
+                    Johan Hove - Strømsgodset,
+                    Jonas Fredriksen - Sogndal,
+                    Sebastian Jarl - Kjelsås,
+                    Markus Solbakken - HamKam,
+                    Emil Kalsaas - Brann,
+                    Eirik Moldenes - Brann,
+                    Halldor Stenevik - Brann,
+                    Filip Møller Delaveris - Odd,
+                    Jørgen Strand Larsen - Sarpsborg 08,
+                    Erik Botheim - Rosenborg,
+                    Robert Williams - Rosenborg,
+                    Edvard Tagseth - Liverpool,
+                    Tobias Christensen - Start,
+                </p>
+                <p class="artikkel_body">Hele ballers kommer til å følge spent med på utviklingen av dette talentet.
+                    Jesper viser hvordan Ballers
+                    United har et tilpasset opplegg for seriøse utøvere som har store planer innen sporten de utøver
+                </p>
+                <button class="knapp" onclick="reset(this)">X</button>
             </div>
 
-            <div class="artikkel hovererBart"  id="artikkel2" onclick="popup(this.id)">
+            <div class="artikkel hovererbart" id="artikkel2" onclick="popup(this)">
                 <div class="imgbox">
                     <img src="../img/fotball/jenter.jpg" title="jenter" alt="artikkel bilde">
                 </div>
-                <h2>Sosial kickoff for høstsesongen og fine sportslige resultater!</h2>
-                <p>
+                <h2 class="artikkel_header">Sosial kickoff for høstsesongen og fine sportslige resultater!</h2>
+                <p class="artikkel_body">
                     Cupen ble veldig bra den, og vi hadde en haug med
                     frivillige foreldre og søsken og øvrig støtteapparat i aksjon
                     gjennom hele helgen, både fredag, lørdag og søndag i alle mulige
@@ -104,7 +107,7 @@
                     til vedlikehold av hallene vi trener i og beachbane ved Ørakerhallen,
                     utstyr til treninger, cupavgifter til noen cuper pr lag i året osv.
                 </p>
-                <p>
+                <p class="artikkel_body">
                     Vi er veldig takknemlige for innsatsen og all god hjelp
                     med arrangementet! Støtteapparatet har dekket vakter i både
                     parkering, kiosker, griller, popcornstasjon, sekreteriat og
@@ -113,15 +116,15 @@
                     gjennom hele cupen, selv om kakestykkene ble ganske så rause
                     utover søndag ettermiddag!
                 </p>
-
+                <button class="knapp" onclick="reset(this)">X</button>
             </div>
 
-            <div class="artikkel hovererBart"  id="artikkel1" onclick="popup(this.id)">
+            <div class="artikkel hovererbart" id="artikkel1" onclick="popup(this)">
                 <div class="imgbox">
                     <img src="../img/fotball/kampbilde.jpg" title="kampbilde" alt="artikkel bilde">
                 </div>
-                <h2>Kampdag på Søndag</h2>
-                <p>
+                <h2 class="artikkel_header">Kampdag på Søndag</h2>
+                <p class="artikkel_body">
                     Baller's møter lørdag Lokomotiv Oslo på Marienlyst KG. Kampstart er 12:00.
                     Årets siste seriekamp går av stabelen lørdag på Marienlyst, og kun hjemmelaget
                     har noe mer enn æren å spille for. Lokomotiv kjemper om en topp 5-plassering som
@@ -129,7 +132,7 @@
                     i denne og andre kamper et sted mellom nr. 6 og nr. 10 på tabellen. Uten tvil et stykke
                     under hva vi hadde planlagt, men vi skal gjøre alt vi kan for å avslutte med stil.
                 </p>
-                <p>
+                <p class="artikkel_body">
                     Forøvrig er det en avdeling der alt er klappet og klart med tanke på 2019.
                     Vi gratulerer Oppsal med opprykket, og kondolerer til Rilindja, KFUM 2,
                     Kristiansund 2 og Hødd 2 med nedrykket.
@@ -137,16 +140,13 @@
                     Bessijan Kastrati (skade) og Alexander Torvund (sykdom)
                     uaktuelle til lørdagens kamp.
                 </p>
-            </div>
-
-            <div>
-                <span id="closebutton" class="close" onclick="reset()">&times;</span>
+                <button class="knapp" onclick="reset(this)">X</button>
             </div>
         </div>
     </div>
     <footer id="ballersFooter"> </footer>
     <script src="../modularitet/footer.js"></script>
-    <script src="../modularitet/popup.js"></script>
+    <script src="../script/artikkelPopup.js"></script>
     <script src="../modularitet/meny.js"></script>
 
 </body>

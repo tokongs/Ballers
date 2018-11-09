@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../style/base.css">
-    <link rel="stylesheet" href="../style/meny.css">
     <link rel="stylesheet" href="../style/blimedlem.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet">
     <title>Bli medlem</title>
@@ -19,15 +18,15 @@
 
     <div id="innhold">
         <div class="artikkel">
-            <form id="skjema" name="bli_medlem" action="action.html" method="post">
+            <form onsubmit="return validateForm()" id="skjema" name="bli_medlem" action="action.html" method="post">
                 <!-- Hvor info fra formen blir sendt -->
                 <div>
                     <label for="navn">Navn:</label>
-                    <input type="text" id="navn" name="navn" required>
+                    <input onkeyup="validateNavn()" placeholder="Ditt navn" type="text" id="navn" name="navn" autofocus required>
                 </div>
                 <div>
                     <label for="mail">E-mail:</label>
-                    <input type="email" id="mail" name="bruker_mail" required>
+                    <input onkeyup="validateEpost()" placeholder="Din e-post" type="email" id="mail" name="bruker_mail" required>
                 </div>
                 <div>
                     <label id="lag">Lag:</label>
@@ -40,7 +39,7 @@
                 </div>
                 <div>
                     <label id="mer_info">Mer info:</label>
-                    <textarea name="mer" rows="10" cols="20"></textarea>
+                    <textarea placeholder="Optional" name="mer" rows="10" cols="20"></textarea>
                 </div>
                 <div>
                     <input type="submit" id="knapp" value="Send inn">
@@ -51,7 +50,7 @@
     <footer id="ballersFooter"> </footer>
     <script src="../modularitet/footer.js"></script>
     <script src="../modularitet/meny.js"></script>
-
+    <script src="../script/blimedlem.js"></script>
 </body>
 
 </html>

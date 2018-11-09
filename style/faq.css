@@ -1,7 +1,3 @@
-body{
-    background-color: #353535;
-}
-
 /* Legge til pluss */
 .accordion:before{
     content: "\002B \0020";
@@ -9,13 +5,15 @@ body{
 
 .accordion {
     background-color:#5A1848;
-    font-size: 25px;
+    font-size: 1.5em;
     padding: 18px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.2s;
+    border-radius: 15px;
+    margin: 2px;
 }
 
 
@@ -25,7 +23,7 @@ body{
 
 /* Legge til minus */
 .active:before{
-        content: "\002D \0020";
+    content: "\002D \0020";
 }
 
 .artikkel{

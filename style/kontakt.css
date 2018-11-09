@@ -37,7 +37,7 @@
 
 #text{
   width: 80%;
-  height: 80%;
+  height: 70%;
   color: #000000;
   margin-left:10%;
   margin-top: 5%;
@@ -46,6 +46,7 @@
 
 #knapper{
   text-align: center;
+  max-height: 20%;
 }
 .bildediv:hover{
   opacity: 0.5;

@@ -10,7 +10,7 @@
     opacity: 0.9;
 }
 
-img {
+#innhold img {
     max-width: 100%;
     max-height: 300px;
     margin: auto;

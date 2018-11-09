@@ -20,8 +20,8 @@ h2{
 
 .hovererbart:hover{
     opacity: 0.8;
-    margin-left: 3vw;
-    margin-right:-1vw;
+    margin-left: 3vw; /*flytter artikkelen 2vw til høyre */
+    margin-right:-1vw; 
 }
 
 .imgbox {
@@ -75,7 +75,7 @@ h2{
     cursor: pointer;   
 }   
 
-@media only screen and (max-width: 950px){    /*alt blir under hverandre når skjermen er liten */
+@media only screen and (max-width: 950px){    /*alt blir under hverandre når skjermen er liten og bildene vises ikke */
     #infobar{
     float: none;
     margin: auto;

@@ -4,8 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>P3 Designendringer</title>
-    <link rel="stylesheet" type="text/css" href="../style/style_docs.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet"
+        type="text/css"
+        href="../style/style_docs.css">
+    <link rel="stylesheet"
+        type="text/css"
+        href="https://fonts.googleapis.com/css?family=Poppins">
 </head>
 
 <body>
@@ -31,30 +35,31 @@
 
         <h3>Generelle endringer</h3>
         <p>
-            Vi endret font-size fra 16 til 14 fordi vi synes dette så bedre og mer profesjonelt ut. I tilleg fjernet vi
+            Vi endret font-size fra 16 til 14 fordi vi synes dette så bedre og mer profesjonelt ut. I tillegg fjernet
+            vi
             den hvite skyggen som gikk ned under menyen fordi dette ikke så så bra ut når vi fikk headinger under
             menyen. Artikkler og infobokser har fått avrundete hjørner da vi bestemte oss for at dette så bedre ut.
             Ettersom at veileder sa at man kunne legget til egne css-filer for hver side i tillegg til en base som
-            inneholder det som går igjen gjennom hele siden, valgte vi å he en cssfil for hver side. Grunnen til at vi
+            inneholder det som går igjen gjennom hele siden, valgte vi å ha en css fil for hver side. Grunnen til at vi
             valgte å gjøre det sånn var at vi mener det er mer oversiktlig og enklere å finne fram til den spesifikke
             linjen for hvert element i hver html. Det var også snakk om å endre font-type etter en et møte med
-            veileder, men dette har vi ikke gjort ettersom at vi ikke fant noe spesifik om dette i oppgavedokumentene
+            veileder, men dette har vi ikke gjort ettersom at vi ikke fant noe spesifikt om dette i oppgavedokumentene
             vi har fått.
         </p>
 
         <h3>Enderinger på base.css</h3>
         <p>
-            Det ble overaskende få endringer i base stylen. Vi bestemte oss for å legge til meny stilen og footer
+            Det ble ikke så mange endringer i base stilen. Vi bestemte oss for å legge til meny stilen og footer
             stilen i basen fordi de skal begge inkluderes på alle sidene. Noe som vi ikke hadde planlagt så nøye før vi
             begynt å lage siden var det med modularitet. Vi løste dette ved å dele det meste av innhold inn i mindre
-            elementer med id artikkel. Vi delte opp artikkel header og artikkel body under dette igjen. Vi delte også
+            deler (artikkler). Vi delte opp i artikkelheader og artikkelbody under dette igjen. Vi delte også
             opp siden i distinkte deler: meny, header, innhold og footer. Dette gjorde at vi kunne style disse
             elementene på en uniform måte uten å måtte kopiere koden på hver side.
         </p>
         <h3>Endringer på forsiden</h3>
         <p>
-            På forsiden var det planlagt å ha bildet og arikkel separert i to forskjellige bokser, men vi har valgt å
-            gå bort ifra dette. Grunnen til det er at når bildene ikke var riktig størrelse/sideforhold så det ikke
+            På forsiden var det planlagt å ha bilde og arikkel separert i to forskjellige bokser, men vi har valgt å
+            gå bort ifra dette. Grunnen til det er at når bildene ikke hadde riktig størrelse/sideforhold så det ikke
             lenger like bra ut. Derfor er det nå tre større bokser med bildene sentrert i toppen av hver boks med tekst
             under. Vi har også lagt til en visuell "cue" på artikklene slik at brukerne skjønner at de kan trykke på
             dem. De får en opacity på 0.9 ved hover og linker til den respektive tilbudssiden.
@@ -67,7 +72,7 @@
             som blir trykket på (artikkelpopup.js).Isteden for vinduPersoner.js lagde vi artikkelPopup.js
             da dette var en mer funksjonell funksjon.
             I forhold til style ble headerbilde gjort tynnere, header tynnere og kanter rundere. Dette gjorde vi fordi
-            det ga plass til mer innhold når man først kommer til siden+ litt finere.
+            det ga plass til mer innhold når man først kommer til siden og det ser bedre ut.
         </p>
 
         <h3>Endringer på kontaktsiden</h3>
@@ -82,20 +87,19 @@
             kalendersiden.
         </p>
 
-        <h3>Endringer på infosidene</h3>
 
-        <h4>Endringer på infosiden</h4>
+        <h3>Endringer på infosiden</h3>
         <p>
-            Infosiden ble også veldig lik den planlagte infosiden. Widthen på de kartboksen og generel infoboksen
+            Infosiden ble også veldig lik den planlagte infosiden. Bredden på de kartboksen og generel infoboksen
             ble slik som vi hadde planlagt. Vi fylte ikke opp sidene så mye at som vi hadde tenkt,
             derfor gikk ikke siden like langt ned som det den gjorde da vi planla siden.
             Vi hadde også sett for oss at begge boksene (både den med kartet og den med generell info) skulle gå like
             langt ned på siden,
-            men det ble litt mye tommrom i kartboksen så vi endte opp med å gjære den litt kortere, fordi vi syntes det
+            men det ble litt mye tommrom i kartboksen så vi endte opp med å gjøre den litt kortere, fordi vi syntes det
             så bedre ut.
         </p>
 
-        <h4>Endringer på FAQ-siden</h4>
+        <h3>Endringer på FAQ-siden</h3>
         <p>
             Det er laget en drop down meny i FAQ.html. Som åpner en boks med svar på spørsmålet når du trykker på
             spørsmålet,
@@ -103,7 +107,7 @@
             og lukker boksen når du klikker på spørsmålet igjen.
         </p>
 
-        <h4>Endringer på kalenderen</h4>
+        <h3>Endringer på kalenderen</h3>
         <p>
             Det er blitt gjort store endringer angående kalenderen - både funksjonaliteten og utseendet.
             Ved første øyekast ser vi at kalenderen har avviket fra standardfargen som går igjen på
@@ -113,11 +117,12 @@
             man holder fokus over dem. Hver dag har bakgrunnsfarge #404040, en litt lysere gråfarge enn bakgrunnen.
             Denne bakgrunnsfargen endrer seg til none; dersom man holder musen over en dag. Vi har lagt til
             litt shaddow slik at rutene fortsatt skiller seg fra bakgrunnsfargen. Dagens dato er også markert
-            på lik måte som hover-attributen til dagene. For at kalenderen ikke skal bli "for brutal" har vi også lagt inn padding for å gi litt mer rom i kantene. Stylingen av kalender er gjort i en egen
+            på lik måte som hover-attributen til dagene. Stylingen av kalender er gjort i en egen
             CSS-fil kalt kalender.css. Dette ble gjort med tanke på at en spesifikk styling
             ble mer oversiktlig å ha i en egen fil.
         </p>
-        <img src="../img/P3_img/Kalender.png" alt="Kalender">
+        <img src="../img/P3_img/Kalender.png"
+            alt="Kalender">
         <p>
             Den første intensjonen angående en interaktiv kalender var å ha en dropdownliste med
             dagens aktiviter dersom man holdt fokus på de ulike dagene. Dette har vi endret til
@@ -162,10 +167,13 @@
             klassenavnene slik at det skal bli lett å style dem i css.
         </p>
         <p>
-            Jin Tony har opprettholdt minimumskravet i javascript ved å implementere script til bli medlem siden og faq siden.
-            Blimedlem.js validerer navn-feltet og email-feltet i innmeldingsskjemaet. I navne-feltet sjekkes det om brukeren har
+            Jin Tony har opprettholdt minimumskravet i javascript ved å implementere script til bli medlem siden og faq
+            siden.
+            Blimedlem.js validerer navn-feltet og email-feltet i innmeldingsskjemaet. I navne-feltet sjekkes det om
+            brukeren har
             skrevet inn bokstaver, i e-mail feltet sjekkes det at brukeren har skrevet inn en email adresse.
-            Spesifikt ved å sjekke om feltet inneholder en @ og punktum. faq.js styrer dropdown boksen når du trykker på et av spørsmålene.
+            Spesifikt ved å sjekke om feltet inneholder en @ og punktum. faq.js styrer dropdown boksen når du trykker
+            på et av spørsmålene.
             Funksjonen reagerer når brukeren trykker på spørsmålet, og boksen som inneholder svaret kommer frem.
 
         </p>
@@ -178,12 +186,7 @@
             2 for-looper for å fjerne og legge til «hover»-stylen.
         </p>
         <p>
-            Lars har opprettholdt minimumskravene ved å implementere et script som viser
-            en kalender. Kalenderen er linket til en tabell i html-dokumentet gjennom en ID.
-            Vi henter inn måned og år som overskrift ved hjelp av datobilioteket i JavaScript.
-            Vi har også brukt datobilioteket for å få satt på plass dato i kalenderbodyen.
-            I funksjonen for kalenderen har vi to for-looper som danner rader og kolonner slik
-            at vi får et tabellutseende på kalenderen.
+            Person 5
         </p>
         <h2>Modularitet</h2>
         <p>
